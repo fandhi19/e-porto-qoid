@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Portofolio PPL 1 | PPG Calon Guru</title>
+    <link rel="icon" type="image/png" href="Images/logo_uny.png" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Background animasi abstrak blur -->
+    <div class="animated-bg">
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+    </div>
+    <header>
+      <div class="container header-container">
+        <div class="logo-wrapper">
+          <img src="Images/logo_uny.png" alt="Logo UNY" class="logo-img" />
+          <h2 class="logo">E-Portofolio<span> PPG.</span></h2>
+        </div>
+
+        <nav>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Artefak PPL 1 ▾</a>
+              <ul class="dropdown-content">
+                <li><a href="observasi.html">Hasil Observasi</a></li>
+                <li><a href="modul.html">Modul Ajar</a></li>
+                <li><a href="lkpd.html">LKPD</a></li>
+                <li><a href="dokumentasi.html">Dokumentasi</a></li>
+              </ul>
+            </li>
+
+            <li><a href="refleksi.html">Refleksi</a></li>
+            <li><a href="modelguru.html">Model Guru</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section reveal">
+        <div class="container hero-container">
+          <div class="hero-image-col">
+            <img src="Images/gaya qoid.png" alt="Foto Gaya Muhammad Qoid Falahi" class="hero-img" />
+          </div>
+
+          <div class="hero-text-col">
+            <h1 class="hero-title">Hallo! Saya<br /><span>Muhammad Qoid Falahi</span></h1>
+            <p class="hero-subtitle">Mahasiswa Pendidikan Profesi Guru (PPG) Calon Guru di Universitas Negeri Yogyakarta. Selamat datang di ruang rekam jejak E-Portofolio Praktik Pengalaman Lapangan (PPL) 1 saya.</p>
+            <div>
+              <a href="profil.html" class="btn-outline">Lihat Profil Saya</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scrolling Banner / Marquee -->
+      <div class="scrolling-banner">
+        <div class="scrolling-track">
+          <span>✨ Pembelajaran Berdiferensiasi</span>
+          <span>🚀 Integrasi TPACK</span>
+          <span>💻 Computational Thinking</span>
+          <span>🎨 Inovasi Media Pembelajaran</span>
+          <span>🌐 Literasi Digital</span>
+          <!-- duplikat agar loop seamless -->
+          <span>✨ Pembelajaran Berdiferensiasi</span>
+          <span>🚀 Integrasi TPACK</span>
+          <span>💻 Computational Thinking</span>
+          <span>🎨 Inovasi Media Pembelajaran</span>
+          <span>🌐 Literasi Digital</span>
+        </div>
+      </div>
+
+      <section class="info-section reveal">
+        <div class="container">
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-icon">📖</div>
+              <h3>Program</h3>
+              <p>PPG Prajabatan 2025/2026</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">🏫</div>
+              <h3>LPTK</h3>
+              <p>Universitas Negeri Yogyakarta</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <h3>Sekolah PPL</h3>
+              <p>SMA Negeri 4 Yogyakarta</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline Kalender PPL 1 -->
+      <section class="timeline-calendar reveal">
+        <div class="container">
+          <div style="text-align: center">
+            <h2 class="section-title">Timeline PPL 1</h2>
+            <p style="color: var(--text-muted); margin-bottom: 30px">23 Maret - 30 April 2026</p>
+          </div>
+
+          <div class="calendar-grid">
+            <!-- Header Hari -->
+            <div class="calendar-header">
+              <div class="day-name">Sen</div>
+              <div class="day-name">Sel</div>
+              <div class="day-name">Rab</div>
+              <div class="day-name">Kam</div>
+              <div class="day-name">Jum</div>
+              <div class="day-name">Sab</div>
+              <div class="day-name">Min</div>
+            </div>
+
+            <!-- Minggu 1: 23 - 29 Maret -->
+            <div class="week-indicator">Minggu 1: 23-29 Maret</div>
+            <div class="calendar-week">
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day has-events">
+                <div class="day-number">Mar <span class="date">23</span></div>
+                <div class="day-events">
+                  <div class="event">📋 Observasi lingkungan belajar</div>
+                </div>
+              </div>
+              <div class="calendar-day has-events">
+                <div class="day-number">Mar <span class="date">24</span></div>
+                <div class="day-events">
+                  <div class="event">🧑‍🏫 Identifikasi karakteristik peserta didik</div>
+                </div>
+              </div>
+              <div class="calendar-day">
+                <div class="day-number">Mar <span class="date">25</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day weekend">
+                <div class="day-number">Mar <span class="date">26</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day weekend">
+                <div class="day-number">Mar <span class="date">27</span></div>
+                <div class="day-events"></div>
+              </div>
+            </div>
+
+            <!-- Minggu 2: 30 Maret - 5 April -->
+            <div class="week-indicator">Minggu 2: 30 Mar - 5 Apr</div>
+            <div class="calendar-week">
+              <div class="calendar-day has-events">
+                <div class="day-number">Mar <span class="date">30</span></div>
+                <div class="day-events">
+                  <div class="event">📝 Penyusunan Modul Ajar</div>
+                </div>
+              </div>
+              <div class="calendar-day">
+                <div class="day-number">Mar <span class="date">31</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">1</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day has-events">
+                <div class="day-number">Apr <span class="date">2</span></div>
+                <div class="day-events">
+                  <div class="event">📄 Pembuatan LKPD & Instrumen asesmen</div>
+                </div>
+              </div>
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">3</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day weekend">
+                <div class="day-number">Apr <span class="date">4</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day weekend">
+                <div class="day-number">Apr <span class="date">5</span></div>
+                <div class="day-events"></div>
+              </div>
+            </div>
+
+            <!-- Minggu 3: 6 - 12 April -->
+            <div class="week-indicator">Minggu 3: 6-12 April</div>
+            <div class="calendar-week">
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">6</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">7</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day has-events">
+                <div class="day-number">Apr <span class="date">8</span></div>
+                <div class="day-events">
+                  <div class="event">🎥 Praktik mengajar 1 (Observasi teman sejawat)</div>
+                </div>
+              </div>
+              <div class="calendar-day has-events">
+                <div class="day-number">Apr <span class="date">9</span></div>
+                <div class="day-events">
+                  <div class="event">🖥️ Implementasi TPACK & CT</div>
+                </div>
+              </div>
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">10</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day weekend">
+                <div class="day-number">Apr <span class="date">11</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day weekend">
+                <div class="day-number">Apr <span class="date">12</span></div>
+                <div class="day-events"></div>
+              </div>
+            </div>
+
+            <!-- Minggu 4: 13 - 19 April -->
+            <div class="week-indicator">Minggu 4: 13-19 April</div>
+            <div class="calendar-week">
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">13</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">14</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day has-events">
+                <div class="day-number">Apr <span class="date">15</span></div>
+                <div class="day-events">
+                  <div class="event">📊 Asesmen formatif & sumatif</div>
+                </div>
+              </div>
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">16</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day has-events">
+                <div class="day-number">Apr <span class="date">17</span></div>
+                <div class="day-events">
+                  <div class="event">💬 Refleksi bersama guru pamong</div>
+                </div>
+              </div>
+              <div class="calendar-day weekend">
+                <div class="day-number">Apr <span class="date">18</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day weekend">
+                <div class="day-number">Apr <span class="date">19</span></div>
+                <div class="day-events"></div>
+              </div>
+            </div>
+
+            <!-- Minggu 5: 20 - 26 April -->
+            <div class="week-indicator">Minggu 5: 20-26 April</div>
+            <div class="calendar-week">
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">20</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">21</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">22</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day has-events">
+                <div class="day-number">Apr <span class="date">23</span></div>
+                <div class="day-events">
+                  <div class="event">📸 Dokumentasi & penyusunan portofolio</div>
+                </div>
+              </div>
+              <div class="calendar-day has-events">
+                <div class="day-number">Apr <span class="date">24</span></div>
+                <div class="day-events">
+                  <div class="event">🔁 Perbaikan perangkat pembelajaran</div>
+                </div>
+              </div>
+              <div class="calendar-day weekend">
+                <div class="day-number">Apr <span class="date">25</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day weekend">
+                <div class="day-number">Apr <span class="date">26</span></div>
+                <div class="day-events"></div>
+              </div>
+            </div>
+
+            <!-- Minggu 6: 27 - 30 April -->
+            <div class="week-indicator">Minggu 6: 27-30 April</div>
+            <div class="calendar-week">
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">27</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day has-events">
+                <div class="day-number">Apr <span class="date">28</span></div>
+                <div class="day-events">
+                  <div class="event">📑 Finalisasi laporan PPL 1</div>
+                </div>
+              </div>
+              <div class="calendar-day">
+                <div class="day-number">Apr <span class="date">29</span></div>
+                <div class="day-events"></div>
+              </div>
+              <div class="calendar-day has-events">
+                <div class="day-number">Apr <span class="date">30</span></div>
+                <div class="day-events">
+                  <div class="event">✅ Evaluasi & umpan balik</div>
+                </div>
+              </div>
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day empty"></div>
+              <div class="calendar-day empty"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dokumen" class="dokumen-section reveal">
+        <div class="container">
+          <div style="text-align: center">
+            <h2 class="section-title">Dokumen & Artefak PPL 1</h2>
+          </div>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-icon">📊</div>
+              <h3>Hasil Observasi</h3>
+              <p>Laporan observasi lingkungan belajar dan karakteristik peserta didik.</p>
+              <a href="observasi.html" class="card-link">Baca Dokumen →</a>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">📚</div>
+              <h3>Modul Ajar</h3>
+              <p>Perangkat pembelajaran, LKPD, bahan ajar, dan instrumen asesmen.</p>
+              <a href="modul.html" class="card-link">Lihat Modul →</a>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">🎥</div>
+              <h3>Dokumentasi</h3>
+              <p>Kumpulan foto dan video selama pelaksanaan praktik mengajar.</p>
+              <a href="dokumentasi.html" class="card-link">Lihat Galeri →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Kegiatan PPL -->
+      <section class="gallery-section reveal">
+        <div class="container">
+          <div style="text-align: center">
+            <h2 class="section-title">Galeri Kegiatan PPL</h2>
+            <p style="color: var(--text-muted); margin-bottom: 40px">Dokumentasi kegiatan selama Praktik Pengalaman Lapangan 1</p>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <div class="gallery-image-wrapper">
+                <img src="Images/foto-bersama.jpeg" alt="Foto Bersaa" class="gallery-image" />
+                <div class="gallery-overlay">
+                  <div class="gallery-info">
+                    <h4>Foto Bersama</h4>
+                    <p>Foto bersama dengan rekan teman PPL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="gallery-image-wrapper">
+                <img src="Images/kelas.jpeg" alt="Kelas XIF6" class="gallery-image" />
+                <div class="gallery-overlay">
+                  <div class="gallery-info">
+                    <h4>Praktik Mengajar</h4>
+                    <p>Kegiatan praktik mengajar Kelas XIF6</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="gallery-image-wrapper">
+                <img src="Images/praktik-mengajar.jpeg" alt="Kegiatan Praktik Mengajar" class="gallery-image" />
+                <div class="gallery-overlay">
+                  <div class="gallery-info">
+                    <h4>Praktik Mengajar</h4>
+                    <p>Pembelajaran di luar kelas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="gallery-image-wrapper">
+                <img src="Images/bimbingan-dpl.jpeg" alt="Bimbingan Bersama DPL" class="gallery-image" />
+                <div class="gallery-overlay">
+                  <div class="gallery-info">
+                    <h4>Bimbingan DPL</h4>
+                    <p>Bimbingan terkait pelaksanaan PPL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="gallery-image-wrapper">
+                <img src="Images/kamis-pon.jpeg" alt="Kamis Pon" class="gallery-image" />
+                <div class="gallery-overlay">
+                  <div class="gallery-info">
+                    <h4>Kamis Pon</h4>
+                    <p>Kegiatan setiap Kamis Pon</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <div class="gallery-image-wrapper">
+                <img src="Images/asesmen.jpeg" alt="Kegiatan Asesmen" class="gallery-image" />
+                <div class="gallery-overlay">
+                  <div class="gallery-info">
+                    <h4>Asesmen Pembelajaran</h4>
+                    <p>Pelaksanaan Asesmen Sumatif</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 50px">
+            <a href="dokumentasi.html" class="btn-outline">Lihat Dokumentasi Lengkap →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-col brand-col">
+          <h3>E-Portofolio<span> PPG.</span></h3>
+          <p>Ruang rekam jejak Praktik Pengalaman Lapangan (PPL) 1. Disusun sebagai dokumentasi dan refleksi perjalanan menjadi guru profesional.</p>
+        </div>
+
+        <div class="footer-col links-col">
+          <h4>Navigasi Cepat</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil Saya</a></li>
+            <li><a href="observasi.html">Hasil Observasi</a></li>
+            <li><a href="modul.html">Modul Ajar</a></li>
+            <li><a href="lkpd.html">LKPD</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h4>Lokasi LPTK</h4>
+          <p>📍 Universitas Negeri Yogyakarta</p>
+
+          <div class="map-container">
+            <iframe
+              src="https://maps.google.com/maps?q=Universitas%20Negeri%20Yogyakarta&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="150"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:ilyasfandhianggara@gmail.com">Email</a>
+            <a href="https://www.instagram.com/fandhidk17/" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Ilyas Fandhi Anggara - E-Portofolio PPL 1 PPG. Semua Hak Cipta Dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Detail Event -->
+    <div class="event-modal" id="eventModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-date" id="modalDate">
+            <span class="date"></span>
+          </div>
+          <button class="modal-close" id="modalClose">×</button>
+        </div>
+        <div class="modal-events" id="modalEvents">
+          <!-- Events akan dimuat di sini via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 1. Toggle Hamburger Menu
+      const menu = document.querySelector("#mobile-menu");
+      const menuLinks = document.querySelector(".nav-links");
+      const dropdown = document.querySelector(".dropdown");
+      const dropbtn = document.querySelector(".dropbtn");
+
+      menu.addEventListener("click", function () {
+        menuLinks.classList.toggle("active");
+        menu.classList.toggle("is-active");
+      });
+
+      // 2. Dropdown Mobile
+      dropbtn.addEventListener("click", function (e) {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          dropdown.classList.toggle("active");
+        }
+      });
+
+      // 3. Animasi Scroll Reveal
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 100;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+      reveal();
+
+      // 4. Event Modal untuk Mobile Calendar
+      const eventModal = document.getElementById("eventModal");
+      const modalClose = document.getElementById("modalClose");
+      const modalDate = document.getElementById("modalDate");
+      const modalEvents = document.getElementById("modalEvents");
+
+      // Data events untuk setiap tanggal
+      const eventsData = {
+        "Mar 23": [
+          {
+            title: "📋 Observasi lingkungan belajar",
+            time: "08:00 - 12:00",
+            description: "Melakukan observasi awal terhadap lingkungan belajar di SMA Negeri 4 Yogyakarta untuk memahami kondisi kelas dan fasilitas.",
+          },
+        ],
+        "Mar 24": [
+          {
+            title: "🧑‍🏫 Identifikasi karakteristik peserta didik",
+            time: "13:00 - 15:00",
+            description: "Mengidentifikasi karakteristik, minat, dan gaya belajar peserta didik untuk keperluan perencanaan pembelajaran.",
+          },
+        ],
+        "Mar 30": [
+          {
+            title: "📝 Penyusunan Modul Ajar",
+            time: "09:00 - 14:00",
+            description: "Menyusun modul ajar untuk mata pelajaran PJOK dengan mengintegrasikan pembelajaran berdiferensiasi.",
+          },
+        ],
+        "Apr 2": [
+          {
+            title: "📄 Pembuatan LKPD",
+            time: "10:00 - 12:00",
+            description: "Membuat Lembar Kerja Peserta Didik (LKPD) yang sesuai dengan kebutuhan pembelajaran berdiferensiasi.",
+          },
+        ],
+        "Apr 8": [
+          {
+            title: "🎥 Praktik mengajar 1",
+            time: "08:00 - 10:00",
+            description: "Melakukan praktik mengajar pertama dengan observasi dari teman sejawat dan guru pamong.",
+          },
+        ],
+        "Apr 9": [
+          {
+            title: "🖥️ Implementasi TPACK",
+            time: "13:00 - 15:00",
+            description: "Mengimplementasikan Technological Pedagogical Content Knowledge (TPACK) dalam pembelajaran PJOK.",
+          },
+        ],
+        "Apr 15": [
+          {
+            title: "📊 Asesmen formatif",
+            time: "08:00 - 09:30",
+            description: "Melakukan asesmen formatif untuk mengukur pemahaman peserta didik selama proses pembelajaran.",
+          },
+        ],
+        "Apr 17": [
+          {
+            title: "💬 Refleksi bersama",
+            time: "14:00 - 16:00",
+            description: "Sesi refleksi bersama guru pamong untuk evaluasi dan perbaikan praktik mengajar.",
+          },
+        ],
+        "Apr 23": [
+          {
+            title: "📸 Dokumentasi",
+            time: "10:00 - 12:00",
+            description: "Melakukan dokumentasi foto dan video selama kegiatan PPL untuk keperluan portofolio.",
+          },
+        ],
+        "Apr 24": [
+          {
+            title: "🔁 Perbaikan perangkat",
+            time: "13:00 - 15:00",
+            description: "Melakukan perbaikan perangkat pembelajaran berdasarkan masukan dari guru pamong.",
+          },
+        ],
+        "Apr 28": [
+          {
+            title: "📑 Finalisasi laporan",
+            time: "09:00 - 14:00",
+            description: "Finalisasi laporan PPL 1 dan menyiapkan semua dokumen yang diperlukan.",
+          },
+        ],
+        "Apr 30": [
+          {
+            title: "✅ Evaluasi & umpan balik",
+            time: "10:00 - 12:00",
+            description: "Sesi evaluasi akhir dan pemberian umpan balik dari guru pamong dan dosen pembimbing.",
+          },
+        ],
+      };
+
+      // Fungsi untuk membuka modal
+      function openModal(dateText, events) {
+        modalDate.innerHTML = dateText;
+
+        if (events && events.length > 0) {
+          modalEvents.innerHTML = events
+            .map(
+              (event) => `
+            <div class="modal-event">
+              <div class="modal-event-title">${event.title}</div>
+              <div class="modal-event-time">🕐 ${event.time}</div>
+              <div class="modal-event-description">${event.description}</div>
+            </div>
+          `,
+            )
+            .join("");
+        } else {
+          modalEvents.innerHTML = '<div class="no-events">Tidak ada kegiatan pada tanggal ini</div>';
+        }
+
+        eventModal.classList.add("active");
+        document.body.style.overflow = "hidden"; // Prevent background scroll
+      }
+
+      // Fungsi untuk menutup modal
+      function closeModal() {
+        eventModal.classList.remove("active");
+        document.body.style.overflow = "auto"; // Restore background scroll
+      }
+
+      // Event listeners untuk calendar days
+      document.addEventListener("click", function (e) {
+        const calendarDay = e.target.closest(".calendar-day");
+        if (calendarDay && window.innerWidth <= 768) {
+          e.preventDefault();
+
+          const dayNumber = calendarDay.querySelector(".day-number");
+          if (dayNumber) {
+            const dateText = dayNumber.textContent.trim();
+            const events = eventsData[dateText] || null;
+            openModal(dateText, events);
+          }
+        }
+      });
+
+      // Event listeners untuk close modal
+      modalClose.addEventListener("click", closeModal);
+
+      eventModal.addEventListener("click", function (e) {
+        if (e.target === eventModal) {
+          closeModal();
+        }
+      });
+
+      // Keyboard navigation
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && eventModal.classList.contains("active")) {
+          closeModal();
+        }
+      });
+
+      // Touch-friendly untuk mobile
+      if ("ontouchstart" in window) {
+        document.querySelectorAll(".calendar-day").forEach((day) => {
+          day.addEventListener("touchstart", function () {
+            this.style.transform = "translateY(-1px)";
+          });
+
+          day.addEventListener("touchend", function () {
+            this.style.transform = "";
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

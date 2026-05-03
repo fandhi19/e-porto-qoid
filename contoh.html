@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iOS Glass Effect 2026</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      body {
+        /* Wallpaper ala iOS dengan gradien abstrak */
+        background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%), url("https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1350&q=80");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .glass-card {
+        /* Kunci utama efek kaca */
+        background: rgba(255, 255, 255, 0.2); /* Warna putih transparan */
+        backdrop-filter: blur(20px); /* Efek Gaussian Blur */
+        -webkit-backdrop-filter: blur(20px); /* Support Safari */
+
+        /* Border halus untuk efek Specular Highlight */
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 30px;
+
+        padding: 40px;
+        width: 350px;
+        text-align: center;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        color: white;
+      }
+
+      h1 {
+        font-weight: 600;
+        margin-bottom: 10px;
+        letter-spacing: -0.5px;
+      }
+
+      p {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        line-height: 1.5;
+      }
+
+      .btn {
+        margin-top: 25px;
+        padding: 12px 25px;
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        border-radius: 15px;
+        color: #333;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        transform: scale(1.05);
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glass-card">
+      <h1>iOS 26 Style</h1>
+      <p>Rasakan pengalaman antarmuka masa depan dengan teknologi Background Blur yang presisi.</p>
+      <button class="btn">Buka Aplikasi</button>
+    </div>
+  </body>
+</html>
