@@ -1,4 +1,6 @@
-/* --- Pengaturan Dasar & Variabel Warna Dark Tech --- */
+/* --- profil.css - Responsif untuk Mobile, Tablet, Desktop --- */
+
+/* ========== PENGATURAN DASAR (WARNA & GLOBAL) ========== */
 :root {
   --primary-color: #0ea5e9;
   --primary-hover: #38bdf8;
@@ -19,16 +21,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: var(--bg-color);
   color: var(--text-main);
   line-height: 1.7;
   overflow-x: hidden;
-  background-image: radial-gradient(circle at 15% 50%, rgba(14, 165, 233, 0.05), transparent 25%), radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.05), transparent 25%);
 }
 
 .container {
@@ -37,107 +34,7 @@ body {
   margin: auto;
 }
 
-/* ========== BACKGROUND ANIMASI BLOB ========== */
-.animated-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  overflow: hidden;
-  pointer-events: none;
-}
-.blob {
-  position: absolute;
-  border-radius: 62% 38% 72% 28% / 45% 55% 45% 55%;
-  filter: blur(80px);
-  opacity: 0.4;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-.blob:nth-child(1) {
-  background: radial-gradient(circle, rgba(14, 165, 233, 0.5), rgba(2, 84, 123, 0.2));
-  width: 600px;
-  height: 600px;
-  top: -200px;
-  left: -200px;
-  animation-name: moveBlob1;
-  animation-duration: 10s;
-}
-.blob:nth-child(2) {
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.5), rgba(66, 32, 112, 0.2));
-  width: 700px;
-  height: 700px;
-  bottom: -150px;
-  right: -200px;
-  animation-name: moveBlob2;
-  animation-duration: 10s;
-}
-.blob:nth-child(3) {
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.4), rgba(6, 95, 130, 0.2));
-  width: 450px;
-  height: 450px;
-  top: 40%;
-  left: 20%;
-  animation-name: moveBlob3;
-  animation-duration: 10s;
-}
-.blob:nth-child(4) {
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.4), rgba(91, 33, 182, 0.15));
-  width: 500px;
-  height: 500px;
-  bottom: 20%;
-  right: 10%;
-  animation-name: moveBlob4;
-  animation-duration: 10s;
-}
-@keyframes moveBlob1 {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  100% {
-    transform: translate(15%, -10%) scale(1.1);
-  }
-}
-@keyframes moveBlob2 {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  100% {
-    transform: translate(-10%, -15%) scale(1.2);
-  }
-}
-@keyframes moveBlob3 {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  100% {
-    transform: translate(30%, -20%) scale(1.2);
-  }
-}
-@keyframes moveBlob4 {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  100% {
-    transform: translate(-20%, -25%) scale(1.15);
-  }
-}
-@media (max-width: 768px) {
-  .blob {
-    width: 300px;
-    height: 300px;
-    filter: blur(60px);
-  }
-  .blob:nth-child(2) {
-    width: 400px;
-    height: 400px;
-  }
-}
-
-/* --- Header Glassmorphism --- */
+/* ========== NAVBAR & HEADER (SAMA SEPERTI DI INDEX) ========== */
 header {
   background-color: var(--glass-bg);
   backdrop-filter: blur(16px);
@@ -275,6 +172,8 @@ header {
   border-radius: 3px;
   transition: var(--transition);
 }
+
+/* ========== RESPONSIVE NAVBAR (MOBILE) ========== */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
@@ -308,27 +207,13 @@ header {
     box-shadow: none;
     padding: 0;
     border: none;
-    transition:
-      max-height 0.4s ease,
-      padding 0.4s ease,
-      visibility 0.4s;
+    transition: max-height 0.4s ease, padding 0.4s ease, visibility 0.4s;
   }
   .dropdown.active .dropdown-content {
     visibility: visible;
     max-height: 300px;
     padding: 10px 0;
   }
-}
-
-/* --- Animasi Scroll Reveal --- */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-}
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* ========== SECTION 1: HERO DUO PROFIL PROFESIONAL ========== */
@@ -346,6 +231,7 @@ header {
   justify-content: center;
   gap: 15px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 .year-badge,
 .program-badge {
@@ -414,8 +300,8 @@ header {
   transition: 0.3s;
 }
 .profile-img img {
-  width: 200px;
-  margin-top: -20px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.5s;
 }
@@ -461,22 +347,6 @@ header {
   box-shadow: 0 0 15px var(--primary-color);
   transform: translateY(-3px);
 }
-@media (max-width: 768px) {
-  .duo-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-  .duo-title {
-    font-size: 32px;
-  }
-  .profile-img {
-    width: 150px;
-    height: 150px;
-  }
-  .profile-img img {
-    width: 140px;
-  }
-}
 
 /* ========== SECTION 2: MENGENAL LEBIH DEKAT ========== */
 .about-section {
@@ -490,20 +360,17 @@ header {
   border: 1px solid var(--border-color);
   transition: transform 0.3s;
 }
-
+.about-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
 .emoji-icon {
   display: inline-block;
-  color: #fbbf24; /* warna kuning keemasan */
+  color: #fbbf24;
   text-shadow: 0 0 8px rgba(251, 191, 36, 0.6);
   margin-right: 8px;
   background: none !important;
   -webkit-text-fill-color: initial !important;
-  -webkit-background-clip: unset !important;
-}
-
-.about-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
 }
 .about-content p {
   color: var(--text-muted);
@@ -619,9 +486,7 @@ header {
 .timeline-item:hover .timeline-dot {
   background: var(--primary-color);
   transform: scale(1.3);
-  box-shadow:
-    0 0 20px var(--primary-color),
-    0 0 40px var(--secondary-color);
+  box-shadow: 0 0 20px var(--primary-color), 0 0 40px var(--secondary-color);
 }
 .timeline-content {
   background: var(--card-bg);
@@ -651,9 +516,7 @@ header {
 .timeline-content:hover {
   transform: translateX(10px);
   border-color: rgba(14, 165, 233, 0.4);
-  box-shadow:
-    0 15px 35px rgba(0, 0, 0, 0.5),
-    inset 0 0 20px rgba(14, 165, 233, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(14, 165, 233, 0.05);
 }
 .timeline-content h3 {
   font-size: 20px;
@@ -748,7 +611,7 @@ header {
   color: var(--text-muted);
 }
 
-/* ========== FOOTER ========== */
+/* ========== FOOTER (SAMA DENGAN INDEX AGAR KONSISTEN) ========== */
 .site-footer {
   background-color: #0b1120;
   color: var(--text-muted);
@@ -757,7 +620,7 @@ header {
 }
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
   gap: 50px;
   margin-bottom: 50px;
 }
@@ -821,6 +684,7 @@ header {
   margin-top: 20px;
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 .social-links a {
   background: rgba(255, 255, 255, 0.05);
@@ -846,4 +710,222 @@ header {
   font-size: 14px;
   color: #475569;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+
+/* TABLET (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    width: 85%;
+  }
+  .duo-title {
+    font-size: 36px;
+  }
+  .profile-img {
+    width: 170px;
+    height: 170px;
+  }
+  .timeline {
+    max-width: 90%;
+  }
+  .timeline-content {
+    padding: 25px;
+  }
+  .timeline-content h3 {
+    font-size: 18px;
+  }
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .footer-col h4::after {
+    left: 0;
+    transform: none;
+  }
+}
+
+/* MOBILE (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .duo-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .duo-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .profile-card {
+    padding: 20px 15px;
+  }
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+  .profile-card h3 {
+    font-size: 20px;
+  }
+  .card-overlay p {
+    font-size: 12px;
+  }
+  .btn-outline {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+  .about-box {
+    padding: 30px 20px;
+  }
+  .profile-quote {
+    padding: 25px 20px;
+    font-size: 16px;
+  }
+  .profile-quote::before {
+    font-size: 80px;
+    left: 10px;
+  }
+  .section-title {
+    font-size: 28px;
+  }
+  .timeline {
+    margin-top: 40px;
+    padding-left: 0;
+  }
+  .timeline::before {
+    left: 15px;
+  }
+  .timeline-item {
+    padding-left: 45px;
+  }
+  .timeline-dot {
+    left: 6px;
+    width: 18px;
+    height: 18px;
+  }
+  .timeline-content {
+    padding: 20px;
+  }
+  .timeline-content::before {
+    left: -30px;
+    width: 30px;
+  }
+  .timeline-content h3 {
+    font-size: 18px;
+  }
+  .institusi {
+    font-size: 13px;
+  }
+  .tahun {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+  .deskripsi {
+    font-size: 13px;
+  }
+  .hobi-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .hobi-img {
+    height: 180px;
+  }
+  .hobi-content h3 {
+    font-size: 18px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 35px;
+  }
+  .footer-col h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .map-container {
+    max-width: 300px;
+    margin: 15px auto 0;
+  }
+}
+
+/* MOBILE KECIL (max-width: 480px) */
+@media (max-width: 480px) {
+  .duo-title {
+    font-size: 24px;
+  }
+  .duo-badge {
+    gap: 10px;
+  }
+  .year-badge,
+  .program-badge {
+    font-size: 12px;
+    padding: 4px 15px;
+  }
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  .profile-card h3 {
+    font-size: 18px;
+  }
+  .profile-card .role {
+    font-size: 12px;
+  }
+  .about-box {
+    padding: 20px 15px;
+  }
+  .about-content p {
+    font-size: 14px;
+  }
+  .profile-quote {
+    font-size: 14px;
+    padding: 20px 15px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .timeline-item {
+    margin-bottom: 35px;
+  }
+  .timeline-content h3 {
+    font-size: 16px;
+  }
+  .hobi-content {
+    padding: 20px;
+  }
+  .hobi-content h3 {
+    font-size: 16px;
+  }
+  .hobi-content p {
+    font-size: 13px;
+  }
+  .footer-bottom p {
+    font-size: 12px;
+  }
+  .social-links a {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+/* DESKTOP LARGE (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .duo-title {
+    font-size: 52px;
+  }
+  .profile-img {
+    width: 220px;
+    height: 220px;
+  }
+  .section-title {
+    font-size: 42px;
+  }
 }
