@@ -347,7 +347,8 @@ header {
   display: none;
   position: absolute;
   background-color: #1e293b;
-  min-width: 220px;
+  min-width: 260px;
+  width: max-content;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   top: 100%;
@@ -364,6 +365,7 @@ header {
   padding: 10px 25px;
   display: block;
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .dropdown-content li a::after {
@@ -536,6 +538,31 @@ header {
 }
 
 /* Tombol */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14.5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.35);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--primary-hover), #9d74f7);
+  box-shadow: 0 8px 25px rgba(14, 165, 233, 0.55);
+  transform: translateY(-3px);
+  color: #ffffff;
+}
+
 .btn-outline {
   display: inline-block;
   padding: 12px 30px;
@@ -1354,7 +1381,7 @@ header {
 
   .dropdown.active .dropdown-content {
     visibility: visible;
-    max-height: 300px;
+    max-height: 500px;
     padding: 10px 0;
   }
 

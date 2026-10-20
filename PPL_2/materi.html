@@ -1,0 +1,1231 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi Pembelajaran PPL 2 | Muhammad Qoid Falahi</title>
+    <link rel="icon" type="image/png" href="../Images/logo_uny.png" />
+    <link rel="stylesheet" href="../Css/style.css" />
+    <link rel="stylesheet" href="../Css/rancangan.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Background animasi abstrak blur -->
+    <div class="animated-bg">
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header>
+      <div class="container header-container">
+        <div class="logo-wrapper">
+          <img src="../Images/logo_uny.png" alt="Logo UNY" class="logo-img" />
+          <h2 class="logo">E-Portofolio<span> PPG.</span></h2>
+        </div>
+
+        <nav>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="../profil.html">Profil</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Jejak PPL 1 ▾</a>
+              <ul class="dropdown-content">
+                <li><a href="../PPL_1/observasi.html">Hasil Observasi</a></li>
+                <li><a href="../PPL_1/modul.html">Modul Ajar</a></li>
+                <li><a href="../PPL_1/lkpd.html">LKPD</a></li>
+                <li><a href="../PPL_1/penilaian.html">Penilaian</a></li>
+                <li><a href="../PPL_1/modelguru.html">Model Guru</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn active">Jejak PPL 2 ▾</a>
+              <ul class="dropdown-content">
+                <li><a href="rancangan.html">Rancangan Pembelajaran</a></li>
+                <li><a href="materi.html">Materi Pembelajaran</a></li>
+                <li><a href="media.html">Media Pembelajaran</a></li>
+                <li><a href="video.html">Video Praktik Mengajar</a></li>
+                <li><a href="non_mengajar.html">Kegiatan Non-Mengajar</a></li>
+                <li><a href="instrumen.html">Instrumen Penilaian</a></li>
+              </ul>
+            </li>
+
+            <li><a href="../refleksi.html">Refleksi</a></li>
+            <li><a href="../filosofi.html">Filosofi Mengajar</a></li>
+            <li><a href="../dokumentasi.html">Dokumentasi</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="rancangan-page-content">
+      <div class="container rancangan-container">
+        <!-- Hero Header -->
+        <div class="page-header-hero reveal">
+          <div class="hero-pill-badge">📖 Bahan Ajar & Modul Materi PJOK Fase F</div>
+          <h1 class="page-title">Materi <span>Pembelajaran PPL 2</span></h1>
+          <p class="page-subtitle">
+            Pusat bahan ajar terstruktur, modul konseptual, panduan mekanika gerak, serta kajian analisis materi ajar berbasis kurikulum merdeka pada Praktik Pengalaman Lapangan (PPL) Mandiri di SMA Negeri 4 Yogyakarta.
+          </p>
+
+          <!-- Statistik & Highlight Chips -->
+          <div class="stat-chips-grid">
+            <div class="stat-chip">
+              <div class="stat-chip-icon">🎓</div>
+              <div class="stat-chip-text">
+                <div class="stat-chip-title">Jenjang Belajar</div>
+                <div class="stat-chip-val">Fase F (Kelas XI)</div>
+              </div>
+            </div>
+            <div class="stat-chip">
+              <div class="stat-chip-icon">📚</div>
+              <div class="stat-chip-text">
+                <div class="stat-chip-title">Cakupan Bahan Ajar</div>
+                <div class="stat-chip-val">4 Materi Pembelajaran</div>
+              </div>
+            </div>
+            <div class="stat-chip">
+              <div class="stat-chip-icon">📊</div>
+              <div class="stat-chip-text">
+                <div class="stat-chip-title">Distribusi Evaluasi</div>
+                <div class="stat-chip-val">Ujian UTS & UAS</div>
+              </div>
+            </div>
+            <div class="stat-chip">
+              <div class="stat-chip-icon">💡</div>
+              <div class="stat-chip-text">
+                <div class="stat-chip-title">Pendekatan Materi</div>
+                <div class="stat-chip-val">Diferensiasi & Dual-Coding</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================================================
+             DUAL SWITCHER CARDS (UTS vs UAS)
+             ========================================================= -->
+        <div class="exam-switcher-container reveal">
+          <!-- Card UTS -->
+          <div class="exam-card-btn active" id="tabBtnUts" onclick="switchMainTab('uts')">
+            <div class="exam-card-left">
+              <div class="exam-badge-icon">📝</div>
+              <div class="exam-meta">
+                <h3>Sub Menu UTS</h3>
+                <p>Ujian Tengah Semester • Siklus 1</p>
+              </div>
+            </div>
+            <div class="exam-tag">1 Bahan Ajar</div>
+          </div>
+
+          <!-- Card UAS -->
+          <div class="exam-card-btn" id="tabBtnUas" onclick="switchMainTab('uas')">
+            <div class="exam-card-left">
+              <div class="exam-badge-icon">🎯</div>
+              <div class="exam-meta">
+                <h3>Sub Menu UAS</h3>
+                <p>Ujian Akhir Semester • Siklus 2, 3, & 4</p>
+              </div>
+            </div>
+            <div class="exam-tag">3 Bahan Ajar</div>
+          </div>
+        </div>
+
+        <!-- =========================================================
+             PANEL UTS: SIKLUS 1 (BOLA VOLI)
+             ========================================================= -->
+        <div class="tab-panel active" id="panelUts">
+          <!-- Cycle Showcase Banner -->
+          <div class="cycle-showcase-banner reveal">
+            <div class="banner-left">
+              <div class="banner-sport-icon">🏐</div>
+              <div class="banner-title-area">
+                <h2>Materi Siklus 1: Permainan Bola Voli</h2>
+                <p>Topik Pembelajaran: Konsep Mekanika Gerak Passing Bawah & Passing Atas Permainan Bola Voli</p>
+                <div class="banner-pills-row">
+                  <span class="mini-badge highlight">PJOK Fase F</span>
+                  <span class="mini-badge">Modul Bahan Ajar Cetak & Digital</span>
+                  <span class="mini-badge">Infografis & Gambar Runtun Gerak</span>
+                  <span class="mini-badge">Alokasi 3 JP (135 Menit)</span>
+                </div>
+              </div>
+            </div>
+            <div class="banner-meta-grid">
+              <div class="banner-meta-item">
+                <span class="bmi-label">Sekolah Mitra</span>
+                <span class="bmi-val">SMAN 4 Yogyakarta</span>
+              </div>
+              <div class="banner-meta-item">
+                <span class="bmi-label">Guru Praktikan</span>
+                <span class="bmi-val">Muhammad Qoid F., S.Pd</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PDF Viewer Showcase Box -->
+          <div class="pdf-showcase-box reveal">
+            <div class="pdf-toolbar">
+              <div class="pdf-doc-title">
+                <span class="pdf-type-badge">BAHAN AJAR</span>
+                <span>Dokumen Materi Ajar Siklus 1 — Permainan Bola Voli</span>
+              </div>
+              <div class="mini-badge">Dokumen Bahan Ajar • A4 Standard</div>
+            </div>
+
+            <div class="pdf-viewer-embed">
+              <iframe
+                src="../Dokumen/Rancangan_Siklus_1_Bola_Voli.pdf"
+                title="Materi Ajar Siklus 1 - Bola Voli"
+              >
+                <p>Browser Anda tidak mendukung preview PDF langsung. <a href="../Dokumen/Rancangan_Siklus_1_Bola_Voli.pdf" download>Klik di sini untuk mengunduh dokumen materi.</a></p>
+              </iframe>
+            </div>
+
+            <div class="pdf-actions-footer">
+              <div class="pdf-actions-left">
+                <span>💡 Dokumen memuat peta konsep, diagram trajektori bola, analisis sudut sendi lengan, dan lembar kerja mandiri.</span>
+              </div>
+              <div class="pdf-actions-right">
+                <a href="../Dokumen/Rancangan_Siklus_1_Bola_Voli.pdf" target="_blank" class="btn-primary">
+                  <span>↗</span> Buka Materi di Jendela Baru
+                </a>
+                <a href="../Dokumen/Rancangan_Siklus_1_Bola_Voli.pdf" download class="btn-outline">
+                  <span>⬇</span> Unduh Bahan Ajar (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Analysis Card (UTS) -->
+          <div class="analysis-interactive-card reveal">
+            <div class="analysis-section-heading">
+              <h3>Analisis Materi Pembelajaran <span>Siklus 1: Bola Voli</span></h3>
+              <p>Kajian analitis penyusunan dan pengorganisasian materi ajar bola voli berbasis kebutuhan kognitif dan motorik peserta didik.</p>
+            </div>
+
+            <!-- Aspect Sub-Tabs -->
+            <div class="analysis-aspect-tabs">
+              <button class="aspect-tab-btn active" onclick="switchAspect('m1', 'konteks', this)">
+                <span>🎯</span> 1. Konteks & Tujuan
+              </button>
+              <button class="aspect-tab-btn" onclick="switchAspect('m1', 'evaluasi', this)">
+                <span>⚖️</span> 2. Kelebihan & Kekurangan
+              </button>
+              <button class="aspect-tab-btn" onclick="switchAspect('m1', 'teori', this)">
+                <span>🧠</span> 3. Kajian Teori Terintegrasi
+              </button>
+            </div>
+
+            <!-- Aspect 1: Konteks & Tujuan -->
+            <div class="aspect-panel active" id="m1-konteks">
+              <div class="context-highlight-box">
+                <div class="ch-title"><span>📌</span> Konteks Materi & Karakteristik Peserta Didik</div>
+                <p class="ch-text">
+                  Materi passing bawah dan passing atas dirancang untuk menjembatani hambatan pemahaman teoritis siswa terhadap sudut pantul bola. Materi disajikan secara visual dengan runtutan foto fase gerak (*sequential breakdown*) agar siswa tidak sekadar menghafal definisi, melainkan memahami konsep transfer energi dari tungkai bawah menuju lengan.
+                </p>
+              </div>
+
+              <div class="domain-cards-grid">
+                <div class="domain-card kognitif">
+                  <div class="domain-header">
+                    <div class="domain-icon">🧠</div>
+                    <h4 class="domain-name">Domain Kognitif</h4>
+                  </div>
+                  <p class="domain-content">
+                    Peserta didik mampu menguraikan hukum pantul mekanika elastisitas gerak saat bola bersentuhan dengan lengan bawah dan jari-jari tangan pada sudut elevasi 45 derajat.
+                  </p>
+                </div>
+
+                <div class="domain-card psikomotorik">
+                  <div class="domain-header">
+                    <div class="domain-icon">⚡</div>
+                    <h4 class="domain-name">Domain Psikomotorik</h4>
+                  </div>
+                  <p class="domain-content">
+                    Bahan ajar membimbing siswa melakukan tugas gerak mandiri bertahap: operan pantul dinding (*wall pass*), operan lambung berpasangan, hingga simulasi mini bola voli.
+                  </p>
+                </div>
+
+                <div class="domain-card afektif">
+                  <div class="domain-header">
+                    <div class="domain-icon">🤝</div>
+                    <h4 class="domain-name">Domain Afektif</h4>
+                  </div>
+                  <p class="domain-content">
+                    Menyisipkan pesan etika kerjasama tim, komunikasi antar kawan saat memanggil bola (*mine/call ball*), serta sikap pantang menyerah saat gagal mengontrol bola.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aspect 2: Kelebihan & Kekurangan -->
+            <div class="aspect-panel" id="m1-evaluasi">
+              <div class="pro-con-interactive">
+                <div class="pro-column">
+                  <div class="column-header">
+                    <div class="col-badge">✨</div>
+                    <h4>Kelebihan Materi (Strengths)</h4>
+                  </div>
+                  <ul class="evaluation-items-list">
+                    <li class="eval-item">
+                      <strong>Representasi Visual Berkelanjutan:</strong> Gambar fase gerak *step-by-step* mempermudah siswa memahami posisi anatomis pergelangan tangan yang presisi.
+                    </li>
+                    <li class="eval-item">
+                      <strong>Diferensiasi Level Materi:</strong> Menyediakan rubrik mandiri tingkat pemula (bola busa), menengah, dan mahir sehingga materi adaptif bagi seluruh siswa.
+                    </li>
+                    <li class="eval-item">
+                      <strong>Tautan Kode QR Interaktif:</strong> Materi ajar dilengkapi barcode ke cuplikan video gerak lambat yang bisa dipindai siswa lewat smartphone.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="con-column">
+                  <div class="column-header">
+                    <div class="col-badge">⚠️</div>
+                    <h4>Kekurangan & Tantangan Materi</h4>
+                  </div>
+                  <ul class="evaluation-items-list">
+                    <li class="eval-item">
+                      <strong>Kompleksitas Biomekanika:</strong> Penjelasan sudut matematis terlalu rinci berpotensi membuat siswa pemula merasa materi terlalu teoritis.
+                    </li>
+                    <li class="eval-item">
+                      <strong>Ketergantungan Akses Gawai:</strong> Siswa yang tidak membawa gawai saat jam pelajaran olahraga tidak dapat memindai tautan video QR secara mandiri di lapangan.
+                    </li>
+                    <li class="eval-item">
+                      <strong>Kebutuhan Modul Tahan Cuaca:</strong> Modul kertas cetak rentan kotor atau basah terkena keringat di area lapangan *outdoor*.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mitigation-box">
+                <div class="mitigation-icon">💡</div>
+                <div class="mitigation-text">
+                  <h5>Rencana Solusi & Mitigasi Guru:</h5>
+                  <p>Menyederhanakan terminologi biomekanika menjadi analogi konkret ("seperti mangkuk dorong" & "papan luncur lengan"), serta mencetak ringkasan materi dalam kartu tugas terlaminasi anti-air di tiap pos latihan.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aspect 3: Kajian Teori PPG -->
+            <div class="aspect-panel" id="m1-teori">
+              <div class="theory-cards-grid">
+                <div class="theory-card">
+                  <span class="theory-tag-pill">Psikologi Kognitif</span>
+                  <h4>🎨 Dual-Coding Theory (Allan Paivio)</h4>
+                  <p>
+                    Penggabungan teks deskripsi dengan ilustrasi diagram visual secara simultan membantu sistem kognitif siswa membangun representasi mental gerak lebih kuat dibanding hanya penjelasan lisan.
+                  </p>
+                </div>
+
+                <div class="theory-card">
+                  <span class="theory-tag-pill">TaRL & Inklusi</span>
+                  <h4>🎯 Teori Diferensiasi Konten (Tomlinson)</h4>
+                  <p>
+                    Materi disajikan dalam beragam tingkat kompleksitas (*tiered content*), memungkinkan siswa dengan pengalaman klub maupun siswa yang baru pertama kali menyentuh bola voli tetap terfasilitasi secara optimal.
+                  </p>
+                </div>
+
+                <div class="theory-card">
+                  <span class="theory-tag-pill">Konstruktivisme</span>
+                  <h4>🧩 Meaningful Learning (David Ausubel)</h4>
+                  <p>
+                    Mengaitkan konsep baru passing voli dengan pengetahuan gerak awal siswa sehari-hari (gerakan memantulkan benda), menciptakan pemahaman yang bertahan lama dalam memori jangka panjang (*long-term motor memory*).
+                  </p>
+                </div>
+
+                <div class="theory-card">
+                  <span class="theory-tag-pill">TPACK Framework</span>
+                  <h4>📱 Integrasi Media Digital dalam Bahan Ajar</h4>
+                  <p>
+                    Mengintegrasikan Pedagogical Content Knowledge (PCK) dengan Teknologi melalui QR Code Video Analisis, menjembatani keterbatasan teks statis menjadi pengalaman belajar multimodal.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================================================
+             PANEL UAS: SIKLUS 2, 3, & 4
+             ========================================================= -->
+        <div class="tab-panel" id="panelUas">
+          <!-- Segmented Sport Selector Pills for UAS -->
+          <div class="uas-cycles-nav reveal">
+            <div class="cycle-nav-btn active" id="subTabBtnSiklus2" onclick="switchUasSubTab('siklus2')">
+              <div class="cycle-icon-box">⚽</div>
+              <div class="cycle-nav-info">
+                <span class="cycle-nav-label">Siklus 2 • Bola Besar</span>
+                <span class="cycle-nav-title">Materi Sepak Bola</span>
+              </div>
+            </div>
+
+            <div class="cycle-nav-btn" id="subTabBtnSiklus3" onclick="switchUasSubTab('siklus3')">
+              <div class="cycle-icon-box">⚾</div>
+              <div class="cycle-nav-info">
+                <span class="cycle-nav-label">Siklus 3 • Bola Kecil</span>
+                <span class="cycle-nav-title">Materi Kasti</span>
+              </div>
+            </div>
+
+            <div class="cycle-nav-btn" id="subTabBtnSiklus4" onclick="switchUasSubTab('siklus4')">
+              <div class="cycle-icon-box">🏃</div>
+              <div class="cycle-nav-info">
+                <span class="cycle-nav-label">Siklus 4 • Atletik</span>
+                <span class="cycle-nav-title">Materi Lari Sprint</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== SIKLUS 2: SEPAK BOLA ==================== -->
+          <div class="uas-sub-panel active" id="panelSiklus2">
+            <!-- Showcase Banner -->
+            <div class="cycle-showcase-banner">
+              <div class="banner-left">
+                <div class="banner-sport-icon">⚽</div>
+                <div class="banner-title-area">
+                  <h2>Materi Siklus 2: Permainan Sepak Bola</h2>
+                  <p>Topik Pembelajaran: Analisis Taktik Passing Kaki Bagian Dalam & Controlling Ruang Terbuka</p>
+                  <div class="banner-pills-row">
+                    <span class="mini-badge highlight">PJOK Fase F</span>
+                    <span class="mini-badge">Model TGfU Terintegrasi</span>
+                    <span class="mini-badge">Diagram Taktikal Rondo 4v1</span>
+                    <span class="mini-badge">Alokasi 3 JP (135 Menit)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="banner-meta-grid">
+                <div class="banner-meta-item">
+                  <span class="bmi-label">Sekolah Mitra</span>
+                  <span class="bmi-val">SMAN 4 Yogyakarta</span>
+                </div>
+                <div class="banner-meta-item">
+                  <span class="bmi-label">Guru Praktikan</span>
+                  <span class="bmi-val">Muhammad Qoid F., S.Pd</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PDF Viewer Box -->
+            <div class="pdf-showcase-box">
+              <div class="pdf-toolbar">
+                <div class="pdf-doc-title">
+                  <span class="pdf-type-badge">BAHAN AJAR</span>
+                  <span>Dokumen Materi Ajar Siklus 2 — Permainan Sepak Bola</span>
+                </div>
+                <div class="mini-badge">Dokumen Bahan Ajar • A4 Standard</div>
+              </div>
+
+              <div class="pdf-viewer-embed">
+                <iframe
+                  src="../Dokumen/Rancangan_Siklus_2_Sepak_Bola.pdf"
+                  title="Materi Ajar Siklus 2 - Sepak Bola"
+                >
+                  <p>Browser Anda tidak mendukung preview PDF langsung. <a href="../Dokumen/Rancangan_Siklus_2_Sepak_Bola.pdf" download>Klik di sini untuk mengunduh dokumen materi.</a></p>
+                </iframe>
+              </div>
+
+              <div class="pdf-actions-footer">
+                <div class="pdf-actions-left">
+                  <span>💡 Dokumen mencakup skema rotasi segitiga passing, instruksi gerak tanpa bola, dan panduan fair play.</span>
+                </div>
+                <div class="pdf-actions-right">
+                  <a href="../Dokumen/Rancangan_Siklus_2_Sepak_Bola.pdf" target="_blank" class="btn-primary">
+                    <span>↗</span> Buka Materi di Jendela Baru
+                  </a>
+                  <a href="../Dokumen/Rancangan_Siklus_2_Sepak_Bola.pdf" download class="btn-outline">
+                    <span>⬇</span> Unduh Bahan Ajar (PDF)
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Analysis Card (Siklus 2) -->
+            <div class="analysis-interactive-card">
+              <div class="analysis-section-heading">
+                <h3>Analisis Materi Pembelajaran <span>Siklus 2: Sepak Bola</span></h3>
+                <p>Kajian analitis bahan ajar sepak bola berbasis tactical awareness dan inklusivitas peran peserta didik.</p>
+              </div>
+
+              <!-- Aspect Sub-Tabs -->
+              <div class="analysis-aspect-tabs">
+                <button class="aspect-tab-btn active" onclick="switchAspect('m2', 'konteks', this)">
+                  <span>🎯</span> 1. Konteks & Tujuan
+                </button>
+                <button class="aspect-tab-btn" onclick="switchAspect('m2', 'evaluasi', this)">
+                  <span>⚖️</span> 2. Kelebihan & Kekurangan
+                </button>
+                <button class="aspect-tab-btn" onclick="switchAspect('m2', 'teori', this)">
+                  <span>🧠</span> 3. Kajian Teori Terintegrasi
+                </button>
+              </div>
+
+              <!-- Aspect 1 -->
+              <div class="aspect-panel active" id="m2-konteks">
+                <div class="context-highlight-box">
+                  <div class="ch-title"><span>📌</span> Konteks Materi & Karakteristik Peserta Didik</div>
+                  <p class="ch-text">
+                    Materi disusun untuk mengatasi jurang keahlian (*skill gap*) antar peserta didik putra dan putri. Bahan ajar mengedepankan taktik pengambilan keputusan (*decision making*) operan bola pendek, bukan kemampuan fisik menendang keras, sehingga seluruh siswa merasa memiliki peran strategis di lapangan.
+                  </p>
+                </div>
+
+                <div class="domain-cards-grid">
+                  <div class="domain-card kognitif">
+                    <div class="domain-header">
+                      <div class="domain-icon">🧠</div>
+                      <h4 class="domain-name">Domain Kognitif</h4>
+                    </div>
+                    <p class="domain-content">
+                      Memahami konsep garis operan (*passing lanes*), timing melepas bola, dan sudut kaki tumpu sejajar arah target untuk meminimalisasi risiko bola terebut lawan.
+                    </p>
+                  </div>
+
+                  <div class="domain-card psikomotorik">
+                    <div class="domain-header">
+                      <div class="domain-icon">⚡</div>
+                      <h4 class="domain-name">Domain Psikomotorik</h4>
+                    </div>
+                    <p class="domain-content">
+                      Menerapkan panduan materi dalam formasi rondo 4v1 dan permainan lapangan mini 5 lawan 5 dengan target sentuhan passing akurat minimal 3 kali sebelum menembak gawang.
+                    </p>
+                  </div>
+
+                  <div class="domain-card afektif">
+                    <div class="domain-header">
+                      <div class="domain-icon">🤝</div>
+                      <h4 class="domain-name">Domain Afektif</h4>
+                    </div>
+                    <p class="domain-content">
+                      Menghargai rekan satu tim tanpa memandang jenis kelamin, menumbuhkan rasa percaya diri pada siswa pemula, serta menjunjung tinggi aturan keselamatan.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aspect 2 -->
+              <div class="aspect-panel" id="m2-evaluasi">
+                <div class="pro-con-interactive">
+                  <div class="pro-column">
+                    <div class="column-header">
+                      <div class="col-badge">✨</div>
+                      <h4>Kelebihan Materi (Strengths)</h4>
+                    </div>
+                    <ul class="evaluation-items-list">
+                      <li class="eval-item">
+                        <strong>Orientasi Taktikal Permainan:</strong> Materi dikemas dalam bentuk skenario pemecahan masalah nyata di lapangan (*tactical game problems*).
+                      </li>
+                      <li class="eval-item">
+                        <strong>Panduan Posisi Gambar Komik Lapangan:</strong> Ilustrasi formasi burung (*bird-eye view*) sangat memudahkan siswa membayangkan arah rotasi kawan.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Kriteria Sukses yang Terukur:</strong> Menampilkan checklist indikator keberhasilan passing yang mudah dicek oleh rekan sebaya (*peer assessment*).
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="con-column">
+                    <div class="column-header">
+                      <div class="col-badge">⚠️</div>
+                      <h4>Kekurangan & Tantangan Materi</h4>
+                    </div>
+                    <ul class="evaluation-items-list">
+                      <li class="eval-item">
+                        <strong>Keterbatasan Membaca Dinamika:</strong> Skema grafis statis pada kertas tidak sepenuhnya menangkap kecepatan lari lawan yang menekan secara agresif.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Perbedaan Gaya Menendang Alami:</strong> Beberapa siswa memiliki kebiasaan menendang dengan ujung jari (*toe-poke*) yang sulit dikoreksi hanya melalui modul bacaan.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Waktu Membaca di Lapangan:</strong> Peserta didik lebih condong ingin langsung menendang bola daripada membaca panduan teks saat berada di lapangan.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="mitigation-box">
+                  <div class="mitigation-icon">💡</div>
+                  <div class="mitigation-text">
+                    <h5>Rencana Solusi & Mitigasi Guru:</h5>
+                    <p>Menyiapkan papan taktik magnetik portabel di pinggir lapangan untuk mendemonstrasikan pergerakan bola secara interaktif 3 menit sebelum drill dimulai.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aspect 3 -->
+              <div class="aspect-panel" id="m2-teori">
+                <div class="theory-cards-grid">
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Tactical Framework</span>
+                    <h4>⚽ TGfU - Tactical Awareness (Bunker & Thorpe)</h4>
+                    <p>
+                      Materi disusun dengan alur *Game Appreciation -> Tactical Awareness -> Decision Making -> Skill Execution*, memastikan siswa memahami 'mengapa' dan 'kapan' mengoper sebelum melatih teknik 'bagaimana' mengoper.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Belajar Situasional</span>
+                    <h4>🧩 Situated Learning (Lave & Wenger)</h4>
+                    <p>
+                      Pengetahuan taktik sepak bola diperoleh paling efektif melalui keterlibatan langsung dalam komunitas praktik permainan mini berskala kecil (*small-sided authentic play*).
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Psikologi Gerak</span>
+                    <h4>⚡ Ecological Dynamics & Constraints-Led Approach</h4>
+                    <p>
+                      Materi menekankan adaptasi gerak tubuh terhadap batasan ruang (*task constraints*), seperti batasan 2 kali sentuhan bola untuk melatih kecepatan membaca arah passing.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Pendidikan Nilai</span>
+                    <h4>🤝 Teaching Personal and Social Responsibility (TPSR)</h4>
+                    <p>
+                      Mengintegrasikan level tanggung jawab Don Hellison ke dalam lembar refleksi materi untuk membiasakan siswa menghargai hak dan partisipasi setiap rekan setim.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== SIKLUS 3: KASTI ==================== -->
+          <div class="uas-sub-panel" id="panelSiklus3">
+            <!-- Showcase Banner -->
+            <div class="cycle-showcase-banner">
+              <div class="banner-left">
+                <div class="banner-sport-icon">⚾</div>
+                <div class="banner-title-area">
+                  <h2>Materi Siklus 3: Permainan Bola Kecil (Kasti)</h2>
+                  <p>Topik Pembelajaran: Teknik Memukul Tongkat Kayu, Akurasi Lemparan, & Strategi Regu Jaga</p>
+                  <div class="banner-pills-row">
+                    <span class="mini-badge highlight">PJOK Fase F</span>
+                    <span class="mini-badge">Kearifan Lokal Nusantara</span>
+                    <span class="mini-badge">Model Kooperatif & Sportivitas</span>
+                    <span class="mini-badge">Alokasi 3 JP (135 Menit)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="banner-meta-grid">
+                <div class="banner-meta-item">
+                  <span class="bmi-label">Sekolah Mitra</span>
+                  <span class="bmi-val">SMAN 4 Yogyakarta</span>
+                </div>
+                <div class="banner-meta-item">
+                  <span class="bmi-label">Guru Praktikan</span>
+                  <span class="bmi-val">Muhammad Qoid F., S.Pd</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PDF Viewer Box -->
+            <div class="pdf-showcase-box">
+              <div class="pdf-toolbar">
+                <div class="pdf-doc-title">
+                  <span class="pdf-type-badge">BAHAN AJAR</span>
+                  <span>Dokumen Materi Ajar Siklus 3 — Permainan Kasti</span>
+                </div>
+                <div class="mini-badge">Dokumen Bahan Ajar • A4 Standard</div>
+              </div>
+
+              <div class="pdf-viewer-embed">
+                <iframe
+                  src="../Dokumen/Rancangan_Siklus_3_Kasti.pdf"
+                  title="Materi Ajar Siklus 3 - Kasti"
+                >
+                  <p>Browser Anda tidak mendukung preview PDF langsung. <a href="../Dokumen/Rancangan_Siklus_3_Kasti.pdf" download>Klik di sini untuk mengunduh dokumen materi.</a></p>
+                </iframe>
+              </div>
+
+              <div class="pdf-actions-footer">
+                <div class="pdf-actions-left">
+                  <span>💡 Bahan ajar memuat denah pos tiang hinggap, panduan lemparan melambung/mendatar, dan aturan keselamatan.</span>
+                </div>
+                <div class="pdf-actions-right">
+                  <a href="../Dokumen/Rancangan_Siklus_3_Kasti.pdf" target="_blank" class="btn-primary">
+                    <span>↗</span> Buka Materi di Jendela Baru
+                  </a>
+                  <a href="../Dokumen/Rancangan_Siklus_3_Kasti.pdf" download class="btn-outline">
+                    <span>⬇</span> Unduh Bahan Ajar (PDF)
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Analysis Card (Siklus 3) -->
+            <div class="analysis-interactive-card">
+              <div class="analysis-section-heading">
+                <h3>Analisis Materi Pembelajaran <span>Siklus 3: Permainan Kasti</span></h3>
+                <p>Kajian analitis pengemasan materi permainan rakyat dengan standar keselamatan modern dan pembelajaran kooperatif.</p>
+              </div>
+
+              <!-- Aspect Sub-Tabs -->
+              <div class="analysis-aspect-tabs">
+                <button class="aspect-tab-btn active" onclick="switchAspect('m3', 'konteks', this)">
+                  <span>🎯</span> 1. Konteks & Tujuan
+                </button>
+                <button class="aspect-tab-btn" onclick="switchAspect('m3', 'evaluasi', this)">
+                  <span>⚖️</span> 2. Kelebihan & Kekurangan
+                </button>
+                <button class="aspect-tab-btn" onclick="switchAspect('m3', 'teori', this)">
+                  <span>🧠</span> 3. Kajian Teori Terintegrasi
+                </button>
+              </div>
+
+              <!-- Aspect 1 -->
+              <div class="aspect-panel active" id="m3-konteks">
+                <div class="context-highlight-box">
+                  <div class="ch-title"><span>📌</span> Konteks Materi & Karakteristik Peserta Didik</div>
+                  <p class="ch-text">
+                    Permainan kasti memiliki peraturan tradisional yang kerap bervariasi antar daerah. Materi ajar disusun untuk membakukan standar aturan main di sekolah, memperjelas batas-batas zona aman pelari, dan memberikan panduan modifikasi tongkat pemukul yang aman bagi peserta didik SMA.
+                  </p>
+                </div>
+
+                <div class="domain-cards-grid">
+                  <div class="domain-card kognitif">
+                    <div class="domain-header">
+                      <div class="domain-icon">🧠</div>
+                      <h4 class="domain-name">Domain Kognitif</h4>
+                    </div>
+                    <p class="domain-content">
+                      Menganalisis lintasan pukulan bola (arah kiri/kanan lapangan), mengkalkulasi waktu tempuh menuju tiang hinggap, dan memahami aturan giliran jaga.
+                    </p>
+                  </div>
+
+                  <div class="domain-card psikomotorik">
+                    <div class="domain-header">
+                      <div class="domain-icon">⚡</div>
+                      <h4 class="domain-name">Domain Psikomotorik</h4>
+                    </div>
+                    <p class="domain-content">
+                      Melatih koordinasi mata-tangan saat memukul bola lambung, teknik melempar terarah sasaran dada ke bawah, dan menangkap bola dua tangan dengan meredam benturan.
+                    </p>
+                  </div>
+
+                  <div class="domain-card afektif">
+                    <div class="domain-header">
+                      <div class="domain-icon">🤝</div>
+                      <h4 class="domain-name">Domain Afektif</h4>
+                    </div>
+                    <p class="domain-content">
+                      Menanamkan kejujuran sukarela ketika terkena lemparan bola penjaga tanpa menunggu dipanggil wasit, serta kepedulian terhadap keselamatan kawan.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aspect 2 -->
+              <div class="aspect-panel" id="m3-evaluasi">
+                <div class="pro-con-interactive">
+                  <div class="pro-column">
+                    <div class="column-header">
+                      <div class="col-badge">✨</div>
+                      <h4>Kelebihan Materi (Strengths)</h4>
+                    </div>
+                    <ul class="evaluation-items-list">
+                      <li class="eval-item">
+                        <strong>Standarisasi Regulasi yang Ramah Siswa:</strong> Menghilangkan ambiguitas aturan kampung dengan panduan bagan alir visual yang jelas.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Protokol Keselamatan Terperinci:</strong> Menyajikan gambar zona bahaya ayunan pemukul dan panduan penggunaan bola lunak spon.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Nuansa Gembira (Joyful Learning):</strong> Mengemas olahraga dalam suasana permainan rakyat yang menurunkan ketegangan fisik peserta didik.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="con-column">
+                    <div class="column-header">
+                      <div class="col-badge">⚠️</div>
+                      <h4>Kekurangan & Tantangan Materi</h4>
+                    </div>
+                    <ul class="evaluation-items-list">
+                      <li class="eval-item">
+                        <strong>Persepsi Kuno / Anak Kecil:</strong> Sebagian siswa SMA menganggap kasti adalah permainan anak SD sebelum mereka mencoba kompleksitas taktiknya.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Kesulitan Mengayun Akurat:</strong> Teks materi tidak bisa menggantikan latihan koordinasi timing memukul bola yang bergerak dinamis.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Batas Lemparan Tubuh:</strong> Memerlukan penekanan berulang bahwa lemparan ke arah kepala dilarang keras secara mutlak.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="mitigation-box">
+                  <div class="mitigation-icon">💡</div>
+                  <div class="mitigation-text">
+                    <h5>Rencana Solusi & Mitigasi Guru:</h5>
+                    <p>Membubuhkan poster protokol 'Safety Zone' di tiang pemukul, menggunakan bola bertali untuk latihan timing memukul statis, dan memodifikasi stik berpenampang lebar bagi pemula.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aspect 3 -->
+              <div class="aspect-panel" id="m3-teori">
+                <div class="theory-cards-grid">
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Antropologi Olahraga</span>
+                    <h4>🏺 Etnopedagogi & Kearifan Tradisional</h4>
+                    <p>
+                      Mengintegrasikan nilai-nilai budaya luhur gotong royong dan musyawarah dalam permainan tradisional kasti untuk mengimbangi kecenderungan individualisme era digital.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Pembelajaran Kooperatif</span>
+                    <h4>👥 Cooperative Learning (Robert Slavin)</h4>
+                    <p>
+                      Materi menuntut sinergi regu jaga melalui pembagian peran pos strategis (*infield* dan *outfield*), di mana kesuksesan regu bergantung pada kecepatan komunikasi operan estafet.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Teori Afektif</span>
+                    <h4>⚖️ Pembentukan Karakter Kejujuran Diri (Moral Knowing)</h4>
+                    <p>
+                      Merujuk teori Thomas Lickona, pengakuan diri saat terkena lemparan bola melatih ranah <em>Moral Feeling</em> dan <em>Moral Action</em> siswa di situasi kompetisi nyata.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Diferensiasi Media</span>
+                    <h4>🏏 Diferensiasi Alat Pemukul Adaptif</h4>
+                    <p>
+                      Menyediakan pilihan alat pemukul kayu pipih bertangkai pendek bagi siswa pemula dan tongkat silinder standar bagi siswa mahir sesuai kesiapan motorik awal.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== SIKLUS 4: SPRINT ==================== -->
+          <div class="uas-sub-panel" id="panelSiklus4">
+            <!-- Showcase Banner -->
+            <div class="cycle-showcase-banner">
+              <div class="banner-left">
+                <div class="banner-sport-icon">🏃</div>
+                <div class="banner-title-area">
+                  <h2>Materi Siklus 4: Atletik - Lari Sprint (Jarak Pendek)</h2>
+                  <p>Topik Pembelajaran: Mekanika Start Jongkok, Sudut Tolakan Akselerasi, & Efisiensi Langkah</p>
+                  <div class="banner-pills-row">
+                    <span class="mini-badge highlight">PJOK Fase F</span>
+                    <span class="mini-badge">Prinsip Biomekanika Lari</span>
+                    <span class="mini-badge">Drill ABC Running Terstruktur</span>
+                    <span class="mini-badge">Alokasi 3 JP (135 Menit)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="banner-meta-grid">
+                <div class="banner-meta-item">
+                  <span class="bmi-label">Sekolah Mitra</span>
+                  <span class="bmi-val">SMAN 4 Yogyakarta</span>
+                </div>
+                <div class="banner-meta-item">
+                  <span class="bmi-label">Guru Praktikan</span>
+                  <span class="bmi-val">Muhammad Qoid F., S.Pd</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PDF Viewer Box -->
+            <div class="pdf-showcase-box">
+              <div class="pdf-toolbar">
+                <div class="pdf-doc-title">
+                  <span class="pdf-type-badge">BAHAN AJAR</span>
+                  <span>Dokumen Materi Ajar Siklus 4 — Atletik Lari Sprint</span>
+                </div>
+                <div class="mini-badge">Dokumen Bahan Ajar • A4 Standard</div>
+              </div>
+
+              <div class="pdf-viewer-embed">
+                <iframe
+                  src="../Dokumen/MODUL AJAR ATLETIK LARI 400 METER.pdf"
+                  title="Materi Ajar Siklus 4 - Atletik Sprint"
+                >
+                  <p>Browser Anda tidak mendukung preview PDF langsung. <a href="../Dokumen/MODUL AJAR ATLETIK LARI 400 METER.pdf" download>Klik di sini untuk mengunduh dokumen materi.</a></p>
+                </iframe>
+              </div>
+
+              <div class="pdf-actions-footer">
+                <div class="pdf-actions-left">
+                  <span>💡 Bahan ajar memuat visual sudut lutut aba-aba start jongkok, latihan drill ABC, dan grafik akselerasi kecepatan.</span>
+                </div>
+                <div class="pdf-actions-right">
+                  <a href="../Dokumen/MODUL AJAR ATLETIK LARI 400 METER.pdf" target="_blank" class="btn-primary">
+                    <span>↗</span> Buka Materi di Jendela Baru
+                  </a>
+                  <a href="../Dokumen/MODUL AJAR ATLETIK LARI 400 METER.pdf" download class="btn-outline">
+                    <span>⬇</span> Unduh Bahan Ajar (PDF)
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Analysis Card (Siklus 4) -->
+            <div class="analysis-interactive-card">
+              <div class="analysis-section-heading">
+                <h3>Analisis Materi Pembelajaran <span>Siklus 4: Lari Sprint</span></h3>
+                <p>Kajian analitis penyusunan materi atletik berbasis hukum biomekanika gerak dan protokol pencegahan cedera otot.</p>
+              </div>
+
+              <!-- Aspect Sub-Tabs -->
+              <div class="analysis-aspect-tabs">
+                <button class="aspect-tab-btn active" onclick="switchAspect('m4', 'konteks', this)">
+                  <span>🎯</span> 1. Konteks & Tujuan
+                </button>
+                <button class="aspect-tab-btn" onclick="switchAspect('m4', 'evaluasi', this)">
+                  <span>⚖️</span> 2. Kelebihan & Kekurangan
+                </button>
+                <button class="aspect-tab-btn" onclick="switchAspect('m4', 'teori', this)">
+                  <span>🧠</span> 3. Kajian Teori Terintegrasi
+                </button>
+              </div>
+
+              <!-- Aspect 1 -->
+              <div class="aspect-panel active" id="m4-konteks">
+                <div class="context-highlight-box">
+                  <div class="ch-title"><span>📌</span> Konteks Materi & Karakteristik Peserta Didik</div>
+                  <p class="ch-text">
+                    Sebagian besar peserta didik menganggap lari sprint sekadar menggerakkan kaki secepat mungkin tanpa menyadari pentingnya efisiensi gaya mekanika tubuh. Bahan ajar ini disusun untuk mengedukasi siswa tentang tahapan krusial: posisi panggul saat aba-aba 'Siap', dorongan sudut 45 derajat saat lepas start, serta pentingnya relaksasi otot bahu.
+                  </p>
+                </div>
+
+                <div class="domain-cards-grid">
+                  <div class="domain-card kognitif">
+                    <div class="domain-header">
+                      <div class="domain-icon">🧠</div>
+                      <h4 class="domain-name">Domain Kognitif</h4>
+                    </div>
+                    <p class="domain-content">
+                      Memahami 3 tahapan start jongkok (*bersedia, siap, ya!*), fase dorongan akselerasi, serta prinsip gaya reaksi lantai (*Ground Reaction Force*).
+                    </p>
+                  </div>
+
+                  <div class="domain-card psikomotorik">
+                    <div class="domain-header">
+                      <div class="domain-icon">⚡</div>
+                      <h4 class="domain-name">Domain Psikomotorik</h4>
+                    </div>
+                    <p class="domain-content">
+                      Mempraktikkan serangkaian drill ABC running (*ankling, high knees, butt kicks*) dan mengeksekusi lari sprint 60m-100m dengan posisi badan aerodinamis.
+                    </p>
+                  </div>
+
+                  <div class="domain-card afektif">
+                    <div class="domain-header">
+                      <div class="domain-icon">🤝</div>
+                      <h4 class="domain-name">Domain Afektif</h4>
+                    </div>
+                    <p class="domain-content">
+                      Menumbuhkan disiplin reaksi waktu start tanpa mencuri sinyal (*false start*), daya juang memacu kecepatan hingga garis finish, dan sikap sportif.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aspect 2 -->
+              <div class="aspect-panel" id="m4-evaluasi">
+                <div class="pro-con-interactive">
+                  <div class="pro-column">
+                    <div class="column-header">
+                      <div class="col-badge">✨</div>
+                      <h4>Kelebihan Materi (Strengths)</h4>
+                    </div>
+                    <ul class="evaluation-items-list">
+                      <li class="eval-item">
+                        <strong>Struktur Latihan Progresif:</strong> Membimbing siswa dari isolasi gerak tungkai (ABC drills) menuju sprint penuh terintegrasi secara bertahap.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Diagram Sudut Biomekanika:</strong> Menampilkan sudut optimal sendi lutut depan (90°) dan lutut belakang (120°) saat posisi aba-aba 'Siap'.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Protokol Pemanasan Dinamis Terpandu:</strong> Memuat panduan peregangan aktif yang spesifik mencegah cedera tarikan otot paha belakang (*hamstring*).
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="con-column">
+                    <div class="column-header">
+                      <div class="col-badge">⚠️</div>
+                      <h4>Kekurangan & Tantangan Materi</h4>
+                    </div>
+                    <ul class="evaluation-items-list">
+                      <li class="eval-item">
+                        <strong>Kerapatan Teks Biomekanika:</strong> Rumus-rumus fisika gaya gerak membutuhkan penjelasan analogi lisan guru yang lebih santai.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Keterbatasan Alat Starting Block:</strong> Materi berasumsi menggunakan blok start standar, padahal sekolah memiliki jumlah blok yang terbatas.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Beban Fisik Kelelahan Asam Laktat:</strong> Memerlukan petunjuk jelas mengenai durasi istirahat interval antar repetisi lari agar siswa tidak pusing.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="mitigation-box">
+                  <div class="mitigation-icon">💡</div>
+                  <div class="mitigation-text">
+                    <h5>Rencana Solusi & Mitigasi Guru:</h5>
+                    <p>Menyertakan teknik membuat cekungan tumpuan tanah alami bila balok start tidak mencukupi, serta menyisipkan tabel waktu istirahat terstruktur (rasio kerja-istirahat 1:5) dalam modul latihan.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aspect 3 -->
+              <div class="aspect-panel" id="m4-teori">
+                <div class="theory-cards-grid">
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Fisiologi Olahraga</span>
+                    <h4>⚡ Sistem Energi Anaerobik Alaktik (ATP-PC)</h4>
+                    <p>
+                      Materi dirancang mengacu pada sistem pasokan fosfagen yang mendominasi kontraksi otot eksplosif durasi maksimal 8-10 detik tanpa penumpukan asam laktat berlebih.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Biomekanika Gerak</span>
+                    <h4>🏃 Hukum Gerak Newton II & III</h4>
+                    <p>
+                      Mengaplikasikan Hukum Aksi-Reaksi: percepatan lari berbanding lurus dengan gaya dorong tolakan kaki ke landasan tumpu (*F = m.a*), ditekankan pada fase condong badan akselerasi awal.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Motor Control</span>
+                    <h4>🧠 Schema Theory (Richard Schmidt)</h4>
+                    <p>
+                      Pengembangan program motorik umum (*Generalized Motor Program*) melalui latihan ABC running drills yang membangun parameter ritme frekuensi dan panjang langkah optimal.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Kesehatan & Pencegahan</span>
+                    <h4>🛡️ Protokol RICE & Dynamic Warm-Up</h4>
+                    <p>
+                      Pendidikan pencegahan cedera muskuloskeletal terintegrasi dalam bahan ajar sebagai pembiasaan kemandirian atletik peserta didik sepanjang hayat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-col brand-col">
+          <h3>E-Portofolio<span> PPG.</span></h3>
+          <p>Ruang rekam jejak Praktik Pengalaman Lapangan (PPL). Disusun sebagai dokumentasi dan refleksi perjalanan menjadi guru profesional.</p>
+        </div>
+
+        <div class="footer-col links-col">
+          <h4>Jejak PPL 1</h4>
+          <ul>
+            <li><a href="../PPL_1/observasi.html">Hasil Observasi</a></li>
+            <li><a href="../PPL_1/modul.html">Modul Ajar</a></li>
+            <li><a href="../PPL_1/lkpd.html">LKPD</a></li>
+            <li><a href="../PPL_1/penilaian.html">Penilaian</a></li>
+            <li><a href="../PPL_1/modelguru.html">Model Guru</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col links-col">
+          <h4>Jejak PPL 2</h4>
+          <ul>
+            <li><a href="rancangan.html">Rancangan Pembelajaran</a></li>
+            <li><a href="materi.html">Materi Pembelajaran</a></li>
+            <li><a href="media.html">Media Pembelajaran</a></li>
+            <li><a href="video.html">Video Praktik Mengajar</a></li>
+            <li><a href="non_mengajar.html">Kegiatan Non-Mengajar</a></li>
+            <li><a href="instrumen.html">Instrumen Penilaian</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h4>Lokasi LPTK</h4>
+          <p>📍 Universitas Negeri Yogyakarta</p>
+
+          <div class="map-container">
+            <iframe
+              src="https://maps.google.com/maps?q=Universitas%20Negeri%20Yogyakarta&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="150"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:ilyasfandhianggara@gmail.com">Email</a>
+            <a href="https://www.instagram.com/fandhidk17/" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Muhammad Qoid Falahi - E-Portofolio PPL PPG. Semua Hak Cipta Dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // 1. Mobile Menu Toggle
+      const menu = document.querySelector("#mobile-menu");
+      const menuLinks = document.querySelector(".nav-links");
+
+      if (menu && menuLinks) {
+        menu.addEventListener("click", function () {
+          menuLinks.classList.toggle("active");
+          menu.classList.toggle("is-active");
+        });
+      }
+
+      // 2. Dropdown Toggle Mobile
+      const dropdowns = document.querySelectorAll(".dropdown");
+      dropdowns.forEach((dropdown) => {
+        const dropbtn = dropdown.querySelector(".dropbtn");
+        if (dropbtn) {
+          dropbtn.addEventListener("click", function (e) {
+            if (window.innerWidth <= 768) {
+              e.preventDefault();
+              dropdown.classList.toggle("active");
+            }
+          });
+        }
+      });
+
+      // 3. Tab Switching: UTS vs UAS
+      function switchMainTab(tabKey) {
+        const btnUts = document.getElementById("tabBtnUts");
+        const btnUas = document.getElementById("tabBtnUas");
+        const panelUts = document.getElementById("panelUts");
+        const panelUas = document.getElementById("panelUas");
+
+        if (tabKey === "uts") {
+          btnUts.classList.add("active");
+          btnUas.classList.remove("active");
+          panelUts.classList.add("active");
+          panelUas.classList.remove("active");
+          window.location.hash = "uts";
+        } else if (tabKey === "uas") {
+          btnUas.classList.add("active");
+          btnUts.classList.remove("active");
+          panelUas.classList.add("active");
+          panelUts.classList.remove("active");
+          window.location.hash = "uas";
+        }
+      }
+
+      // 4. Sub-Tab Switching inside UAS: Siklus 2, 3, 4
+      function switchUasSubTab(siklusKey) {
+        const btnSiklus2 = document.getElementById("subTabBtnSiklus2");
+        const btnSiklus3 = document.getElementById("subTabBtnSiklus3");
+        const btnSiklus4 = document.getElementById("subTabBtnSiklus4");
+
+        const panelSiklus2 = document.getElementById("panelSiklus2");
+        const panelSiklus3 = document.getElementById("panelSiklus3");
+        const panelSiklus4 = document.getElementById("panelSiklus4");
+
+        // Reset all buttons & panels
+        [btnSiklus2, btnSiklus3, btnSiklus4].forEach((b) => {
+          if (b) b.classList.remove("active");
+        });
+        [panelSiklus2, panelSiklus3, panelSiklus4].forEach((p) => {
+          if (p) {
+            p.classList.remove("active");
+            p.style.display = "none";
+          }
+        });
+
+        if (siklusKey === "siklus2") {
+          btnSiklus2.classList.add("active");
+          panelSiklus2.classList.add("active");
+          panelSiklus2.style.display = "block";
+          window.location.hash = "uas-siklus2";
+        } else if (siklusKey === "siklus3") {
+          btnSiklus3.classList.add("active");
+          panelSiklus3.classList.add("active");
+          panelSiklus3.style.display = "block";
+          window.location.hash = "uas-siklus3";
+        } else if (siklusKey === "siklus4") {
+          btnSiklus4.classList.add("active");
+          panelSiklus4.classList.add("active");
+          panelSiklus4.style.display = "block";
+          window.location.hash = "uas-siklus4";
+        }
+      }
+
+      // 5. Switch Aspect Tabs (Konteks, Evaluasi, Teori) within each cycle
+      function switchAspect(cyclePrefix, aspectKey, clickedBtn) {
+        const parentTabs = clickedBtn.parentElement;
+        const allAspectBtns = parentTabs.querySelectorAll(".aspect-tab-btn");
+        allAspectBtns.forEach((btn) => btn.classList.remove("active"));
+        clickedBtn.classList.add("active");
+
+        const parentCard = parentTabs.closest(".analysis-interactive-card");
+        const allPanels = parentCard.querySelectorAll(".aspect-panel");
+        allPanels.forEach((panel) => panel.classList.remove("active"));
+
+        const targetPanel = document.getElementById(`${cyclePrefix}-${aspectKey}`);
+        if (targetPanel) {
+          targetPanel.classList.add("active");
+        }
+      }
+
+      // 6. Handle URL Hash on Load
+      window.addEventListener("DOMContentLoaded", () => {
+        const hash = window.location.hash.toLowerCase();
+        if (hash.includes("uas")) {
+          switchMainTab("uas");
+          if (hash.includes("siklus3")) {
+            switchUasSubTab("siklus3");
+          } else if (hash.includes("siklus4")) {
+            switchUasSubTab("siklus4");
+          } else {
+            switchUasSubTab("siklus2");
+          }
+        } else {
+          switchMainTab("uts");
+        }
+      });
+
+      // 7. Scroll Reveal Animation
+      function reveal() {
+        const reveals = document.querySelectorAll(".reveal");
+        for (let i = 0; i < reveals.length; i++) {
+          const windowHeight = window.innerHeight;
+          const elementTop = reveals[i].getBoundingClientRect().top;
+          const elementVisible = 60;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+      reveal();
+    </script>
+  </body>
+</html>

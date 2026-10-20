@@ -137,7 +137,8 @@ header {
   display: none;
   position: absolute;
   background-color: #1e293b;
-  min-width: 220px;
+  min-width: 260px;
+  width: max-content;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   top: 100%;
@@ -154,6 +155,7 @@ header {
   padding: 10px 25px;
   display: block;
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .dropdown-content li a::after {
@@ -241,7 +243,7 @@ header {
   }
   .dropdown.active .dropdown-content {
     visibility: visible;
-    max-height: 300px;
+    max-height: 500px;
     padding: 10px 0;
   }
 }

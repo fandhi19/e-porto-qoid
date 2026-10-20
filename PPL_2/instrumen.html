@@ -1,0 +1,1231 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instrumen Penilaian PPL 2 | Muhammad Qoid Falahi</title>
+    <link rel="icon" type="image/png" href="../Images/logo_uny.png" />
+    <link rel="stylesheet" href="../Css/style.css" />
+    <link rel="stylesheet" href="../Css/rancangan.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Background animasi abstrak blur -->
+    <div class="animated-bg">
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header>
+      <div class="container header-container">
+        <div class="logo-wrapper">
+          <img src="../Images/logo_uny.png" alt="Logo UNY" class="logo-img" />
+          <h2 class="logo">E-Portofolio<span> PPG.</span></h2>
+        </div>
+
+        <nav>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="../profil.html">Profil</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Jejak PPL 1 ▾</a>
+              <ul class="dropdown-content">
+                <li><a href="../PPL_1/observasi.html">Hasil Observasi</a></li>
+                <li><a href="../PPL_1/modul.html">Modul Ajar</a></li>
+                <li><a href="../PPL_1/lkpd.html">LKPD</a></li>
+                <li><a href="../PPL_1/penilaian.html">Penilaian</a></li>
+                <li><a href="../PPL_1/modelguru.html">Model Guru</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn active">Jejak PPL 2 ▾</a>
+              <ul class="dropdown-content">
+                <li><a href="rancangan.html">Rancangan Pembelajaran</a></li>
+                <li><a href="materi.html">Materi Pembelajaran</a></li>
+                <li><a href="media.html">Media Pembelajaran</a></li>
+                <li><a href="video.html">Video Praktik Mengajar</a></li>
+                <li><a href="non_mengajar.html">Kegiatan Non-Mengajar</a></li>
+                <li><a href="instrumen.html">Instrumen Penilaian</a></li>
+              </ul>
+            </li>
+
+            <li><a href="../refleksi.html">Refleksi</a></li>
+            <li><a href="../filosofi.html">Filosofi Mengajar</a></li>
+            <li><a href="../dokumentasi.html">Dokumentasi</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="rancangan-page-content">
+      <div class="container rancangan-container">
+        <!-- Hero Header -->
+        <div class="page-header-hero reveal">
+          <div class="hero-pill-badge">📋 Instrumen & Rubrik Asesmen Autentik PJOK</div>
+          <h1 class="page-title">Instrumen <span>Penilaian PPL 2</span></h1>
+          <p class="page-subtitle">
+            Perangkat evaluasi pembelajaran terpadu mencakup kisi-kisi instrumen diagnostik, formatif, dan sumatif pada tiga domain utama (Kognitif, Psikomotorik, Afektif) pada Praktik Pengalaman Lapangan (PPL) Mandiri di SMA Negeri 4 Yogyakarta.
+          </p>
+
+          <!-- Statistik & Highlight Chips -->
+          <div class="stat-chips-grid">
+            <div class="stat-chip">
+              <div class="stat-chip-icon">🎓</div>
+              <div class="stat-chip-text">
+                <div class="stat-chip-title">Jenjang Belajar</div>
+                <div class="stat-chip-val">Fase F (Kelas XI)</div>
+              </div>
+            </div>
+            <div class="stat-chip">
+              <div class="stat-chip-icon">📋</div>
+              <div class="stat-chip-text">
+                <div class="stat-chip-title">Cakupan Ranah</div>
+                <div class="stat-chip-val">3 Ranah Terintegrasi</div>
+              </div>
+            </div>
+            <div class="stat-chip">
+              <div class="stat-chip-icon">📊</div>
+              <div class="stat-chip-text">
+                <div class="stat-chip-title">Distribusi Evaluasi</div>
+                <div class="stat-chip-val">Ujian UTS & UAS</div>
+              </div>
+            </div>
+            <div class="stat-chip">
+              <div class="stat-chip-icon">💡</div>
+              <div class="stat-chip-text">
+                <div class="stat-chip-title">Model Evaluasi</div>
+                <div class="stat-chip-val">Asesmen Autentik & Rubrik</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================================================
+             DUAL SWITCHER CARDS (UTS vs UAS)
+             ========================================================= -->
+        <div class="exam-switcher-container reveal">
+          <!-- Card UTS -->
+          <div class="exam-card-btn active" id="tabBtnUts" onclick="switchMainTab('uts')">
+            <div class="exam-card-left">
+              <div class="exam-badge-icon">📝</div>
+              <div class="exam-meta">
+                <h3>Sub Menu UTS</h3>
+                <p>Ujian Tengah Semester • Siklus 1</p>
+              </div>
+            </div>
+            <div class="exam-tag">1 Perangkat Asesmen</div>
+          </div>
+
+          <!-- Card UAS -->
+          <div class="exam-card-btn" id="tabBtnUas" onclick="switchMainTab('uas')">
+            <div class="exam-card-left">
+              <div class="exam-badge-icon">🎯</div>
+              <div class="exam-meta">
+                <h3>Sub Menu UAS</h3>
+                <p>Ujian Akhir Semester • Siklus 2, 3, & 4</p>
+              </div>
+            </div>
+            <div class="exam-tag">3 Perangkat Asesmen</div>
+          </div>
+        </div>
+
+        <!-- =========================================================
+             PANEL UTS: SIKLUS 1 (BOLA VOLI)
+             ========================================================= -->
+        <div class="tab-panel active" id="panelUts">
+          <!-- Cycle Showcase Banner -->
+          <div class="cycle-showcase-banner reveal">
+            <div class="banner-left">
+              <div class="banner-sport-icon">🏐</div>
+              <div class="banner-title-area">
+                <h2>Instrumen Siklus 1: Permainan Bola Voli</h2>
+                <p>Fokus Evaluasi: Rubrik Analitik Passing Bawah, Tes Pemahaman Taktis, & Lembar Observasi Sikap</p>
+                <div class="banner-pills-row">
+                  <span class="mini-badge highlight">PJOK Fase F</span>
+                  <span class="mini-badge">Asesmen Formatif & Sumatif</span>
+                  <span class="mini-badge">Rubrik Skala Likert 1-4</span>
+                  <span class="mini-badge">Profil Pelajar Pancasila</span>
+                </div>
+              </div>
+            </div>
+            <div class="banner-meta-grid">
+              <div class="banner-meta-item">
+                <span class="bmi-label">Sekolah Mitra</span>
+                <span class="bmi-val">SMAN 4 Yogyakarta</span>
+              </div>
+              <div class="banner-meta-item">
+                <span class="bmi-label">Guru Praktikan</span>
+                <span class="bmi-val">Muhammad Qoid F., S.Pd</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PDF Showcase Box -->
+          <div class="pdf-showcase-box reveal">
+            <div class="pdf-toolbar">
+              <div class="pdf-doc-title">
+                <span class="pdf-type-badge">INSTRUMEN</span>
+                <span>Dokumen Instrumen & Rubrik Penilaian Siklus 1 — Permainan Bola Voli</span>
+              </div>
+              <div class="mini-badge">Format PDF Evaluasi • A4 Standard</div>
+            </div>
+
+            <div class="pdf-viewer-embed">
+              <iframe
+                src="../Dokumen/Rancangan_Siklus_1_Bola_Voli.pdf"
+                title="Instrumen Penilaian Siklus 1 - Bola Voli"
+              >
+                <p>Browser Anda tidak mendukung preview langsung. <a href="../Dokumen/Rancangan_Siklus_1_Bola_Voli.pdf" download>Klik di sini untuk mengunduh dokumen instrumen.</a></p>
+              </iframe>
+            </div>
+
+            <div class="pdf-actions-footer">
+              <div class="pdf-actions-left">
+                <span>💡 Dokumen mencakup kisi-kisi soal, rubrik unjuk kerja motorik, lembar penilaian antarteman, dan pedoman penskoran.</span>
+              </div>
+              <div class="pdf-actions-right">
+                <a href="../Dokumen/Rancangan_Siklus_1_Bola_Voli.pdf" target="_blank" class="btn-primary">
+                  <span>↗</span> Buka Instrumen di Jendela Baru
+                </a>
+                <a href="../Dokumen/Rancangan_Siklus_1_Bola_Voli.pdf" download class="btn-outline">
+                  <span>⬇</span> Unduh Rubrik Penilaian (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Analysis Card (UTS) -->
+          <div class="analysis-interactive-card reveal">
+            <div class="analysis-section-heading">
+              <h3>Analisis Instrumen Penilaian <span>Siklus 1: Bola Voli</span></h3>
+              <p>Kajian analitis validitas, reliabilitas, dan objektivitas asesmen autentik pembelajaran bola voli berbasis kurikulum merdeka.</p>
+            </div>
+
+            <!-- Aspect Sub-Tabs -->
+            <div class="analysis-aspect-tabs">
+              <button class="aspect-tab-btn active" onclick="switchAspect('i1', 'konteks', this)">
+                <span>🎯</span> 1. Konteks & Tujuan
+              </button>
+              <button class="aspect-tab-btn" onclick="switchAspect('i1', 'evaluasi', this)">
+                <span>⚖️</span> 2. Kelebihan & Kekurangan
+              </button>
+              <button class="aspect-tab-btn" onclick="switchAspect('i1', 'teori', this)">
+                <span>🧠</span> 3. Kajian Teori Terintegrasi
+              </button>
+            </div>
+
+            <!-- Aspect 1: Konteks & Tujuan -->
+            <div class="aspect-panel active" id="i1-konteks">
+              <div class="context-highlight-box">
+                <div class="ch-title"><span>📌</span> Konteks & Desain Asesmen Autentik</div>
+                <p class="ch-text">
+                  Penilaian dalam PJOK tidak boleh semata-mata menguji kuantitas berapa kali bola berhasil memantul, melainkan harus menilai kualitas proses mekanika gerak dan sikap sportivitas siswa. Instrumen Siklus 1 dirancang menggunakan rubrik analitik bertingkat (*analytic rubrics*) yang membedah fase persiapan, pelaksanaan, dan gerakan lanjutan (*follow-through*).
+                </p>
+              </div>
+
+              <div class="domain-cards-grid">
+                <div class="domain-card kognitif">
+                  <div class="domain-header">
+                    <div class="domain-icon">🧠</div>
+                    <h4 class="domain-name">Ranah Kognitif</h4>
+                  </div>
+                  <p class="domain-content">
+                    Tes tertulis dan lisan berbasis studi kasus video (*HOTS problem-solving*) mengenai analisis penyebab bola passing bawah menyimpang dari sasaran pengumpan (*setter*).
+                  </p>
+                </div>
+
+                <div class="domain-card psikomotorik">
+                  <div class="domain-header">
+                    <div class="domain-icon">⚡</div>
+                    <h4 class="domain-name">Ranah Psikomotorik</h4>
+                  </div>
+                  <p class="domain-content">
+                    Lembar observasi unjuk kerja dengan 4 indikator esensial: posisi kuda-kuda lutut lentur, sudut siku lengan terkunci rapat, perkenaan bidang datar, dan dorongan tubuh.
+                  </p>
+                </div>
+
+                <div class="domain-card afektif">
+                  <div class="domain-header">
+                    <div class="domain-icon">🤝</div>
+                    <h4 class="domain-name">Ranah Afektif</h4>
+                  </div>
+                  <p class="domain-content">
+                    Jurnal pengamatan sikap dan lembar penilaian rekan sebaya (*peer rating*) yang mengevaluasi gotong royong, resiliensi diri, dan saling menghargai kemampuan teman.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aspect 2: Kelebihan & Kekurangan -->
+            <div class="aspect-panel" id="i1-evaluasi">
+              <div class="pro-con-interactive">
+                <div class="pro-column">
+                  <div class="column-header">
+                    <div class="col-badge">✨</div>
+                    <h4>Kelebihan Instrumen (Strengths)</h4>
+                  </div>
+                  <ul class="evaluation-items-list">
+                    <li class="eval-item">
+                      <strong>Deskriptor Kinerja Operasional:</strong> Setiap skala skor (1-4) dilengkapi kriteria perilaku nyata sehingga meminimalkan bias subjektivitas guru.
+                    </li>
+                    <li class="eval-item">
+                      <strong>Asesmen Berorientasi Proses:</strong> Siswa pemula yang belum mahir tetap dapat memperoleh nilai baik jika menunjukkan teknik mekanika gerak yang benar.
+                    </li>
+                    <li class="eval-item">
+                      <strong>Transparansi Bagi Peserta Didik:</strong> Rubrik dibagikan di awal pembelajaran agar siswa memahami secara gamblang ekspektasi capaian belajar.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="con-column">
+                  <div class="column-header">
+                    <div class="col-badge">⚠️</div>
+                    <h4>Kekurangan & Tantangan Instrumen</h4>
+                  </div>
+                  <ul class="evaluation-items-list">
+                    <li class="eval-item">
+                      <strong>Kepadatan Waktu Observasi:</strong> Menilai 36 siswa satu per satu di lapangan luar ruangan membutuhkan alokasi waktu pengamatan yang cukup intensif.
+                    </li>
+                    <li class="eval-item">
+                      <strong>Kecenderungan Kemurahan Nilai Antarteman:</strong> Pada asesmen antarteman, siswa cenderung memberi skor tinggi kepada sahabat karibnya (*halo effect*).
+                    </li>
+                    <li class="eval-item">
+                      <strong>Pencatatan Manual di Lapangan:</strong> Lembar kertas penilaian rentan kusut atau tertiup angin saat guru aktif bergerak mengawasi latihan.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mitigation-box">
+                <div class="mitigation-icon">💡</div>
+                <div class="mitigation-text">
+                  <h5>Rencana Solusi & Mitigasi Guru:</h5>
+                  <p>Membagi penilaian ke dalam klaster kelompok kecil 6 orang saat simulasi mini-game, menyosialisasikan integritas objektivitas peer-assessment, serta memanfaatkan tablet digital dengan aplikasi Google Form untuk input skor cepat.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aspect 3: Kajian Teori PPG -->
+            <div class="aspect-panel" id="i1-teori">
+              <div class="theory-cards-grid">
+                <div class="theory-card">
+                  <span class="theory-tag-pill">Asesmen Formatif</span>
+                  <h4>🔄 Assessment for Learning (Black & Wiliam)</h4>
+                  <p>
+                    Penilaian formatif berfungsi sebagai radar diagnosis belajar (*learning feedback*), bukan sekadar vonis angka rapor, membantu guru dan siswa mengidentifikasi kekurangan teknis seketika.
+                  </p>
+                </div>
+
+                <div class="theory-card">
+                  <span class="theory-tag-pill">Asesmen Autentik</span>
+                  <h4>🎯 Authentic Assessment Framework (Grant Wiggins)</h4>
+                  <p>
+                    Tugas evaluasi disajikan dalam konteks riil situasi permainan mini 3 vs 3, mengukur kemampuan siswa menerapkan pengetahuan gerak pada situasi tak terduga (*contextual performance*).
+                  </p>
+                </div>
+
+                <div class="theory-card">
+                  <span class="theory-tag-pill">Pengukuran Pendidikan</span>
+                  <h4>📐 Analytic Rubric Design (W. James Popham)</h4>
+                  <p>
+                    Rubrik analitik memberikan rincian skor terpisah untuk setiap komponen kriteria gerak, menghasilkan umpan balik diagnostik yang kaya makna dibanding rubrik holistik tunggal.
+                  </p>
+                </div>
+
+                <div class="theory-card">
+                  <span class="theory-tag-pill">Psikometri Olahraga</span>
+                  <h4>⚖️ Inter-Rater Reliability dalam PJOK</h4>
+                  <p>
+                    Standarisasi deskriptor gerak menjamin konsistensi hasil penilaian antarguru maupun antarteman sebaya, menjaga reliabilitas instrumen evaluasi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================================================
+             PANEL UAS: SIKLUS 2, 3, & 4
+             ========================================================= -->
+        <div class="tab-panel" id="panelUas">
+          <!-- Segmented Sport Selector Pills for UAS -->
+          <div class="uas-cycles-nav reveal">
+            <div class="cycle-nav-btn active" id="subTabBtnSiklus2" onclick="switchUasSubTab('siklus2')">
+              <div class="cycle-icon-box">⚽</div>
+              <div class="cycle-nav-info">
+                <span class="cycle-nav-label">Siklus 2 • Bola Besar</span>
+                <span class="cycle-nav-title">Instrumen Sepak Bola</span>
+              </div>
+            </div>
+
+            <div class="cycle-nav-btn" id="subTabBtnSiklus3" onclick="switchUasSubTab('siklus3')">
+              <div class="cycle-icon-box">⚾</div>
+              <div class="cycle-nav-info">
+                <span class="cycle-nav-label">Siklus 3 • Bola Kecil</span>
+                <span class="cycle-nav-title">Instrumen Kasti</span>
+              </div>
+            </div>
+
+            <div class="cycle-nav-btn" id="subTabBtnSiklus4" onclick="switchUasSubTab('siklus4')">
+              <div class="cycle-icon-box">🏃</div>
+              <div class="cycle-nav-info">
+                <span class="cycle-nav-label">Siklus 4 • Atletik</span>
+                <span class="cycle-nav-title">Instrumen Lari Sprint</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== SIKLUS 2: SEPAK BOLA ==================== -->
+          <div class="uas-sub-panel active" id="panelSiklus2">
+            <!-- Showcase Banner -->
+            <div class="cycle-showcase-banner">
+              <div class="banner-left">
+                <div class="banner-sport-icon">⚽</div>
+                <div class="banner-title-area">
+                  <h2>Instrumen Siklus 2: Permainan Sepak Bola</h2>
+                  <p>Fokus Evaluasi: Game Performance Assessment Instrument (GPAI) Passing & Decision Making</p>
+                  <div class="banner-pills-row">
+                    <span class="mini-badge highlight">PJOK Fase F</span>
+                    <span class="mini-badge">Instrumen GPAI Taktikal</span>
+                    <span class="mini-badge">Asesmen Kinerja Game Rondo 4v1</span>
+                    <span class="mini-badge">Alokasi 3 JP (135 Menit)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="banner-meta-grid">
+                <div class="banner-meta-item">
+                  <span class="bmi-label">Sekolah Mitra</span>
+                  <span class="bmi-val">SMAN 4 Yogyakarta</span>
+                </div>
+                <div class="banner-meta-item">
+                  <span class="bmi-label">Guru Praktikan</span>
+                  <span class="bmi-val">Muhammad Qoid F., S.Pd</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PDF Showcase Box -->
+            <div class="pdf-showcase-box">
+              <div class="pdf-toolbar">
+                <div class="pdf-doc-title">
+                  <span class="pdf-type-badge">INSTRUMEN</span>
+                  <span>Dokumen Instrumen & Rubrik Penilaian Siklus 2 — Sepak Bola</span>
+                </div>
+                <div class="mini-badge">Format PDF Evaluasi • A4 Standard</div>
+              </div>
+
+              <div class="pdf-viewer-embed">
+                <iframe
+                  src="../Dokumen/Rancangan_Siklus_2_Sepak_Bola.pdf"
+                  title="Instrumen Penilaian Siklus 2 - Sepak Bola"
+                >
+                  <p>Browser Anda tidak mendukung preview langsung. <a href="../Dokumen/Rancangan_Siklus_2_Sepak_Bola.pdf" download>Klik di sini untuk mengunduh dokumen instrumen.</a></p>
+                </iframe>
+              </div>
+
+              <div class="pdf-actions-footer">
+                <div class="pdf-actions-left">
+                  <span>💡 Berkas mencakup lembar instrumen GPAI, rubrik pengambilan keputusan passing, dan catatan anekdot perilaku.</span>
+                </div>
+                <div class="pdf-actions-right">
+                  <a href="../Dokumen/Rancangan_Siklus_2_Sepak_Bola.pdf" target="_blank" class="btn-primary">
+                    <span>↗</span> Buka Instrumen di Jendela Baru
+                  </a>
+                  <a href="../Dokumen/Rancangan_Siklus_2_Sepak_Bola.pdf" download class="btn-outline">
+                    <span>⬇</span> Unduh Rubrik Penilaian (PDF)
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Analysis Card (Siklus 2) -->
+            <div class="analysis-interactive-card">
+              <div class="analysis-section-heading">
+                <h3>Analisis Instrumen Penilaian <span>Siklus 2: Sepak Bola</span></h3>
+                <p>Kajian analitis implementasi instrumen evaluasi performa taktis (GPAI) dalam permainan sepak bola modifikasi.</p>
+              </div>
+
+              <!-- Aspect Sub-Tabs -->
+              <div class="analysis-aspect-tabs">
+                <button class="aspect-tab-btn active" onclick="switchAspect('i2', 'konteks', this)">
+                  <span>🎯</span> 1. Konteks & Tujuan
+                </button>
+                <button class="aspect-tab-btn" onclick="switchAspect('i2', 'evaluasi', this)">
+                  <span>⚖️</span> 2. Kelebihan & Kekurangan
+                </button>
+                <button class="aspect-tab-btn" onclick="switchAspect('i2', 'teori', this)">
+                  <span>🧠</span> 3. Kajian Teori Terintegrasi
+                </button>
+              </div>
+
+              <!-- Aspect 1 -->
+              <div class="aspect-panel active" id="i2-konteks">
+                <div class="context-highlight-box">
+                  <div class="ch-title"><span>📌</span> Konteks & Desain Asesmen GPAI</div>
+                  <p class="ch-text">
+                    Pada olahraga invasi beregu seperti sepak bola, tes keterampilan gerak terisolasi (seperti menendang bola ke tembok) tidak mencerminkan kecerdasan bermain sesungguhnya. Instrumen Siklus 2 mengadopsi <em>Game Performance Assessment Instrument (GPAI)</em> yang mengevaluasi 3 komponen dinamis: Pengambilan Keputusan (*Decision Making*), Eksekusi Keterampilan (*Skill Execution*), dan Penyesuaian Ruang (*Support/Base*).
+                  </p>
+                </div>
+
+                <div class="domain-cards-grid">
+                  <div class="domain-card kognitif">
+                    <div class="domain-header">
+                      <div class="domain-icon">🧠</div>
+                      <h4 class="domain-name">Ranah Kognitif</h4>
+                    </div>
+                    <p class="domain-content">
+                      Menilai indeks ketepatan keputusan (*Decision Making Index*): apakah siswa memilih mengoper ke kawan bebas atau memaksakan dribbling berbahaya.
+                    </p>
+                  </div>
+
+                  <div class="domain-card psikomotorik">
+                    <div class="domain-header">
+                      <div class="domain-icon">⚡</div>
+                      <h4 class="domain-name">Ranah Psikomotorik</h4>
+                    </div>
+                    <p class="domain-content">
+                      Menilai indeks eksekusi keterampilan (*Skill Execution Index*): persentase keberhasilan akurasi laju operan kaki bagian dalam yang sampai ke kaki rekan.
+                    </p>
+                  </div>
+
+                  <div class="domain-card afektif">
+                    <div class="domain-header">
+                      <div class="domain-icon">🤝</div>
+                      <h4 class="domain-name">Ranah Afektif</h4>
+                    </div>
+                    <p class="domain-content">
+                      Menilai indeks keterlibatan permainan (*Game Involvement*), respek terhadap keputusan wasit, dan komunikasi suportif tanpa celaan antar rekan setim.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aspect 2 -->
+              <div class="aspect-panel" id="i2-evaluasi">
+                <div class="pro-con-interactive">
+                  <div class="pro-column">
+                    <div class="column-header">
+                      <div class="col-badge">✨</div>
+                      <h4>Kelebihan Instrumen (Strengths)</h4>
+                    </div>
+                    <ul class="evaluation-items-list">
+                      <li class="eval-item">
+                        <strong>Autentisitas Pengukuran Tinggi:</strong> Menilai keterampilan siswa secara nyata di tengah tekanan situasi permainan dinamis.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Menghargai Pemain Tanpa Bola:</strong> Siswa yang aktif bergerak membuka ruang mendapat skor tinggi pada komponen *Support*, bukan hanya pencetak gol.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Keseimbangan Gender yang Adil:</strong> Siswi putri yang bermain taktis dan disiplin mengoper memperoleh skor keterlibatan yang sangat adil.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="con-column">
+                    <div class="column-header">
+                      <div class="col-badge">⚠️</div>
+                      <h4>Kekurangan & Tantangan Instrumen</h4>
+                    </div>
+                    <ul class="evaluation-items-list">
+                      <li class="eval-item">
+                        <strong>Beban Observasi Cepat:</strong> Menghitung aksi tepat (*appropriate*) vs keliru (*inappropriate*) secara *real-time* membutuhkan konsentrasi tinggi.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Variabilitas Durasi Sentuhan:</strong> Jika tim mendominasi penguasaan bola, pemain tim lawan memiliki frekuensi aksi yang lebih sedikit untuk diobservasi.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Perlu Pelatihan Pengamat:</strong> Rekan sejawat atau observer membutuhkan latihan awal menyamakan persepsi definisi tindakan yang tepat.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="mitigation-box">
+                  <div class="mitigation-icon">💡</div>
+                  <div class="mitigation-text">
+                    <h5>Rencana Solusi & Mitigasi Guru:</h5>
+                    <p>Merekam cuplikan game mini 5 menit dengan kamera ponsel untuk diverifikasi ulang skor GPAI-nya, serta membatasi fokus pengamatan pada 4 siswa per periode game.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aspect 3 -->
+              <div class="aspect-panel" id="i2-teori">
+                <div class="theory-cards-grid">
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Asesmen Taktikal</span>
+                    <h4>⚽ GPAI Model (Oslin, Mitchell, & Griffin, 1998)</h4>
+                    <p>
+                      Instrumen GPAI diakui secara global sebagai instrumen standar emas untuk mengukur performa komponen taktis dan keterampilan teknis secara terpadu dalam model pembelajaran TGfU.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Teori Konstruktivisme</span>
+                    <h4>🧠 Assessment as Learning</h4>
+                    <p>
+                      Penggunaan rubrik GPAI melatih kesadaran metakognitif siswa untuk merefleksikan kualitas keputusan bermainnya sendiri (*self-monitoring of tactical choices*).
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Pendidikan Inklusif</span>
+                    <h4>🎯 Gender Equity Assessment in PE</h4>
+                    <p>
+                      Instrumen penilaian ini mendemokratisasi evaluasi olahraga tim, menggeser fokus dari kekuatan fisik otot ke kecerdasan spasial dan kohesivitas gotong royong.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Psikometri Olahraga</span>
+                    <h4>📊 Construct Validity</h4>
+                    <p>
+                      Korelasi erat antara skor GPAI dengan keberhasilan alur serangan tim membuktikan validitas konstruk instrumen dalam mengukur efektivitas pembelajaran PJOK.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== SIKLUS 3: KASTI ==================== -->
+          <div class="uas-sub-panel" id="panelSiklus3">
+            <!-- Showcase Banner -->
+            <div class="cycle-showcase-banner">
+              <div class="banner-left">
+                <div class="banner-sport-icon">⚾</div>
+                <div class="banner-title-area">
+                  <h2>Instrumen Siklus 3: Permainan Bola Kecil (Kasti)</h2>
+                  <p>Fokus Evaluasi: Rubrik Koordinasi Manipulatif & Lembar Observasi Afektif Kejujuran Diri</p>
+                  <div class="banner-pills-row">
+                    <span class="mini-badge highlight">PJOK Fase F</span>
+                    <span class="mini-badge">Asesmen Kejujuran Diri Sukarela</span>
+                    <span class="mini-badge">Rubrik Memukul & Lempar-Tangkap</span>
+                    <span class="mini-badge">Alokasi 3 JP (135 Menit)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="banner-meta-grid">
+                <div class="banner-meta-item">
+                  <span class="bmi-label">Sekolah Mitra</span>
+                  <span class="bmi-val">SMAN 4 Yogyakarta</span>
+                </div>
+                <div class="banner-meta-item">
+                  <span class="bmi-label">Guru Praktikan</span>
+                  <span class="bmi-val">Muhammad Qoid F., S.Pd</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PDF Showcase Box -->
+            <div class="pdf-showcase-box">
+              <div class="pdf-toolbar">
+                <div class="pdf-doc-title">
+                  <span class="pdf-type-badge">INSTRUMEN</span>
+                  <span>Dokumen Instrumen & Rubrik Penilaian Siklus 3 — Permainan Kasti</span>
+                </div>
+                <div class="mini-badge">Format PDF Evaluasi • A4 Standard</div>
+              </div>
+
+              <div class="pdf-viewer-embed">
+                <iframe
+                  src="../Dokumen/Rancangan_Siklus_3_Kasti.pdf"
+                  title="Instrumen Penilaian Siklus 3 - Kasti"
+                >
+                  <p>Browser Anda tidak mendukung preview langsung. <a href="../Dokumen/Rancangan_Siklus_3_Kasti.pdf" download>Klik di sini untuk mengunduh dokumen instrumen.</a></p>
+                </iframe>
+              </div>
+
+              <div class="pdf-actions-footer">
+                <div class="pdf-actions-left">
+                  <span>💡 Berkas memuat rubrik keterampilan memukul, lembar pengamatan sportivitas, dan format penilaian diri sendiri (*self-assessment*).</span>
+                </div>
+                <div class="pdf-actions-right">
+                  <a href="../Dokumen/Rancangan_Siklus_3_Kasti.pdf" target="_blank" class="btn-primary">
+                    <span>↗</span> Buka Instrumen di Jendela Baru
+                  </a>
+                  <a href="../Dokumen/Rancangan_Siklus_3_Kasti.pdf" download class="btn-outline">
+                    <span>⬇</span> Unduh Rubrik Penilaian (PDF)
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Analysis Card (Siklus 3) -->
+            <div class="analysis-interactive-card">
+              <div class="analysis-section-heading">
+                <h3>Analisis Instrumen Penilaian <span>Siklus 3: Permainan Kasti</span></h3>
+                <p>Kajian analitis penyusunan lembar penilaian karakter kejujuran diri dan rubrik keterampilan gerak manipulatif.</p>
+              </div>
+
+              <!-- Aspect Sub-Tabs -->
+              <div class="analysis-aspect-tabs">
+                <button class="aspect-tab-btn active" onclick="switchAspect('i3', 'konteks', this)">
+                  <span>🎯</span> 1. Konteks & Tujuan
+                </button>
+                <button class="aspect-tab-btn" onclick="switchAspect('i3', 'evaluasi', this)">
+                  <span>⚖️</span> 2. Kelebihan & Kekurangan
+                </button>
+                <button class="aspect-tab-btn" onclick="switchAspect('i3', 'teori', this)">
+                  <span>🧠</span> 3. Kajian Teori Terintegrasi
+                </button>
+              </div>
+
+              <!-- Aspect 1 -->
+              <div class="aspect-panel active" id="i3-konteks">
+                <div class="context-highlight-box">
+                  <div class="ch-title"><span>📌</span> Konteks & Nilai Karakter Asesmen</div>
+                  <p class="ch-text">
+                    Kasti adalah olahraga tradisional yang sarat dengan dinamika kejujuran: apakah lemparan bola mengenai tubuh pelari atau meleset? Instrumen evaluasi Siklus 3 memprioritaskan penanaman nilai integritas diri (*self-honesty rubric*) di samping pengukuran keterampilan koordinasi mata-tangan memukul dan menangkap bola.
+                  </p>
+                </div>
+
+                <div class="domain-cards-grid">
+                  <div class="domain-card kognitif">
+                    <div class="domain-header">
+                      <div class="domain-icon">🧠</div>
+                      <h4 class="domain-name">Ranah Kognitif</h4>
+                    </div>
+                    <p class="domain-content">
+                      Memahami peraturan permainan kasti modifikasi, kalkulasi zona bebas lemparan, serta etika sportivitas dalam situasi permainan yang ketat.
+                    </p>
+                  </div>
+
+                  <div class="domain-card psikomotorik">
+                    <div class="domain-header">
+                      <div class="domain-icon">⚡</div>
+                      <h4 class="domain-name">Ranah Psikomotorik</h4>
+                    </div>
+                    <p class="domain-content">
+                      Rubrik 4 indikator: posisi kuda-kuda bersiap memukul, akurasi perkenaan tongkat dengan bola lambung, teknik melempar terarah, dan lari zig-zag.
+                    </p>
+                  </div>
+
+                  <div class="domain-card afektif">
+                    <div class="domain-header">
+                      <div class="domain-icon">🤝</div>
+                      <h4 class="domain-name">Ranah Afektif</h4>
+                    </div>
+                    <p class="domain-content">
+                      Lembar observasi kejujuran sukarela: kesadaran mengakui terkena lemparan tanpa bantahan, disiplin antre keselamatan, dan kolaborasi tim jaga.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aspect 2 -->
+              <div class="aspect-panel" id="i3-evaluasi">
+                <div class="pro-con-interactive">
+                  <div class="pro-column">
+                    <div class="column-header">
+                      <div class="col-badge">✨</div>
+                      <h4>Kelebihan Instrumen (Strengths)</h4>
+                    </div>
+                    <ul class="evaluation-items-list">
+                      <li class="eval-item">
+                        <strong>Penguatan Karakter Kongkret:</strong> Aspek kejujuran diberi bobot terukur dalam lembar refleksi diri (*self-rating rubrics*).
+                      </li>
+                      <li class="eval-item">
+                        <strong>Diferensiasi Standar Alat:</strong> Rubrik membedakan indikator penilaian bagi siswa yang menggunakan stik modifikasi pipih vs stik standar.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Mendorong Iklim Saling Percaya:</strong> Mereduksi perdebatan antar tim karena sistem penilaian memprioritaskan pengakuan jujur pelari.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="con-column">
+                    <div class="column-header">
+                      <div class="col-badge">⚠️</div>
+                      <h4>Kekurangan & Tantangan Instrumen</h4>
+                    </div>
+                    <ul class="evaluation-items-list">
+                      <li class="eval-item">
+                        <strong>Potensi Bias Keinginan Sosial:</strong> Siswa mungkin mengisi lembar penilaian diri sesuai jawaban ideal yang diinginkan guru (*social desirability*).
+                      </li>
+                      <li class="eval-item">
+                        <strong>Kecepatan Insiden Lemparan:</strong> Lemparan tipis pada ujung pakaian sulit diverifikasi dengan mata tanpa bantuan tayangan lambat.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Kesulitan Menilai Peran Individual Regu:</strong> Pada regu pemukul yang jarang mendapat giliran memukul karena kalah cepat, data skor gerak lebih sedikit.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="mitigation-box">
+                  <div class="mitigation-icon">💡</div>
+                  <div class="mitigation-text">
+                    <h5>Rencana Solusi & Mitigasi Guru:</h5>
+                    <p>Menyilangkan hasil self-assessment dengan observasi catatan anekdot guru, menunjuk 2 siswa sebagai 'duta fair play' di tiang hinggap, serta memastikan rotasi giliran pemukul berjalan seimbang.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aspect 3 -->
+              <div class="aspect-panel" id="i3-teori">
+                <div class="theory-cards-grid">
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Pendidikan Karakter</span>
+                    <h4>⭐ Moral Reasoning & Action (Thomas Lickona)</h4>
+                    <p>
+                      Instrumen penilaian menghubungkan <em>Moral Knowing</em> (paham aturan), <em>Moral Feeling</em> (malu berbuat curang), dan <em>Moral Action</em> (tindakan jujur mengakui lemparan).
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Asesmen Mandiri</span>
+                    <h4>🪞 Self-Assessment & Metacognitive Calibration</h4>
+                    <p>
+                      Melatih siswa mengevaluasi diri secara objektif tanpa rasa takut dihukum nilai rendah, menumbuhkan integritas akademik dan moralitas karakter sepanjang hayat.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Pendidikan Nilai</span>
+                    <h4>🤝 Hellison's TPSR Responsibility Levels</h4>
+                    <p>
+                      Menilai perkembangan siswa dari Level 1 (Menghargai Hak Kawan), Level 2 (Partisipasi Usaha), hingga Level 3 (Pengarahan Diri Mandiri).
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Diferensiasi Evaluasi</span>
+                    <h4>🎯 Tomlinson's Differentiated Assessment</h4>
+                    <p>
+                      Kriteria penilaian disesuaikan dengan kesiapan gerak awal, memastikan siswa pemula dinilai berdasarkan kemajuan (*progress*) bukan batas limit mutlak.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== SIKLUS 4: SPRINT ==================== -->
+          <div class="uas-sub-panel" id="panelSiklus4">
+            <!-- Showcase Banner -->
+            <div class="cycle-showcase-banner">
+              <div class="banner-left">
+                <div class="banner-sport-icon">🏃</div>
+                <div class="banner-title-area">
+                  <h2>Instrumen Siklus 4: Atletik - Lari Sprint (Jarak Pendek)</h2>
+                  <p>Fokus Evaluasi: Lembar Observasi Biomekanika Start Jongkok & Catatan Waktu Digital 100m</p>
+                  <div class="banner-pills-row">
+                    <span class="mini-badge highlight">PJOK Fase F</span>
+                    <span class="mini-badge">Asesmen Waktu Objektif 1/100 Detik</span>
+                    <span class="mini-badge">Checklist Biomekanika Gerak Sprint</span>
+                    <span class="mini-badge">Alokasi 3 JP (135 Menit)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="banner-meta-grid">
+                <div class="banner-meta-item">
+                  <span class="bmi-label">Sekolah Mitra</span>
+                  <span class="bmi-val">SMAN 4 Yogyakarta</span>
+                </div>
+                <div class="banner-meta-item">
+                  <span class="bmi-label">Guru Praktikan</span>
+                  <span class="bmi-val">Muhammad Qoid F., S.Pd</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PDF Showcase Box -->
+            <div class="pdf-showcase-box">
+              <div class="pdf-toolbar">
+                <div class="pdf-doc-title">
+                  <span class="pdf-type-badge">INSTRUMEN</span>
+                  <span>Dokumen Instrumen & Rubrik Penilaian Siklus 4 — Atletik Lari Sprint</span>
+                </div>
+                <div class="mini-badge">Format PDF Evaluasi • A4 Standard</div>
+              </div>
+
+              <div class="pdf-viewer-embed">
+                <iframe
+                  src="../Dokumen/MODUL AJAR ATLETIK LARI 400 METER.pdf"
+                  title="Instrumen Penilaian Siklus 4 - Atletik Sprint"
+                >
+                  <p>Browser Anda tidak mendukung preview langsung. <a href="../Dokumen/MODUL AJAR ATLETIK LARI 400 METER.pdf" download>Klik di sini untuk mengunduh dokumen instrumen.</a></p>
+                </iframe>
+              </div>
+
+              <div class="pdf-actions-footer">
+                <div class="pdf-actions-left">
+                  <span>💡 Berkas mencakup tabel konversi waktu 100m Fase F, lembar cek sudut tumpu start jongkok, dan rubrik daya juang (*grit*).</span>
+                </div>
+                <div class="pdf-actions-right">
+                  <a href="../Dokumen/MODUL AJAR ATLETIK LARI 400 METER.pdf" target="_blank" class="btn-primary">
+                    <span>↗</span> Buka Instrumen di Jendela Baru
+                  </a>
+                  <a href="../Dokumen/MODUL AJAR ATLETIK LARI 400 METER.pdf" download class="btn-outline">
+                    <span>⬇</span> Unduh Rubrik Penilaian (PDF)
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Analysis Card (Siklus 4) -->
+            <div class="analysis-interactive-card">
+              <div class="analysis-section-heading">
+                <h3>Analisis Instrumen Penilaian <span>Siklus 4: Lari Sprint</span></h3>
+                <p>Kajian analitis objektivitas pengukuran waktu digital dan integrasi asesmen berbasis pertumbuhan kemajuan individu (*ipsative assessment*).</p>
+              </div>
+
+              <!-- Aspect Sub-Tabs -->
+              <div class="analysis-aspect-tabs">
+                <button class="aspect-tab-btn active" onclick="switchAspect('i4', 'konteks', this)">
+                  <span>🎯</span> 1. Konteks & Tujuan
+                </button>
+                <button class="aspect-tab-btn" onclick="switchAspect('i4', 'evaluasi', this)">
+                  <span>⚖️</span> 2. Kelebihan & Kekurangan
+                </button>
+                <button class="aspect-tab-btn" onclick="switchAspect('i4', 'teori', this)">
+                  <span>🧠</span> 3. Kajian Teori Terintegrasi
+                </button>
+              </div>
+
+              <!-- Aspect 1 -->
+              <div class="aspect-panel active" id="i4-konteks">
+                <div class="context-highlight-box">
+                  <div class="ch-title"><span>📌</span> Konteks & Desain Asesmen Biomekanika</div>
+                  <p class="ch-text">
+                    Jika penilaian lari sprint hanya didasarkan pada catatan waktu mutlak, siswa yang secara genetik tidak memiliki proporsi serabut otot cepat (*fast-twitch fibers*) tinggi akan selalu merasa gagal. Instrumen Siklus 4 menyeimbangkan antara evaluasi waktu digital dengan penilaian kualitas teknik biomekanika start jongkok dan persentase reduksi waktu pribadi.
+                  </p>
+                </div>
+
+                <div class="domain-cards-grid">
+                  <div class="domain-card kognitif">
+                    <div class="domain-header">
+                      <div class="domain-icon">🧠</div>
+                      <h4 class="domain-name">Ranah Kognitif</h4>
+                    </div>
+                    <p class="domain-content">
+                      Tes pemahaman hukum biomekanika lari sprint: hubungan sudut condong badan akselerasi, frekuensi langkah, serta manajemen pernapasan anaerobik.
+                    </p>
+                  </div>
+
+                  <div class="domain-card psikomotorik">
+                    <div class="domain-header">
+                      <div class="domain-icon">⚡</div>
+                      <h4 class="domain-name">Ranah Psikomotorik</h4>
+                    </div>
+                    <p class="domain-content">
+                      Checklist observasi fase start jongkok (aba-aba bersedia, siap, ya!), akselerasi 30m pertama, dan pencatatan waktu digital stopwatch presisi 100 meter.
+                    </p>
+                  </div>
+
+                  <div class="domain-card afektif">
+                    <div class="domain-header">
+                      <div class="domain-icon">🤝</div>
+                      <h4 class="domain-name">Ranah Afektif</h4>
+                    </div>
+                    <p class="domain-content">
+                      Menilai daya juang ketabahan (*grit*), kedisiplinan mematuhi aba-aba start tanpa mendahului (*false start*), serta sikap menghargai batas fisik diri sendiri.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aspect 2 -->
+              <div class="aspect-panel" id="i4-evaluasi">
+                <div class="pro-con-interactive">
+                  <div class="pro-column">
+                    <div class="column-header">
+                      <div class="col-badge">✨</div>
+                      <h4>Kelebihan Instrumen (Strengths)</h4>
+                    </div>
+                    <ul class="evaluation-items-list">
+                      <li class="eval-item">
+                        <strong>Objektivitas 100% Terukur:</strong> Catatan waktu digital stopwatch menutup celah bias subjektivitas perasaan penilai.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Penilaian Berbasis Progres (Ipsatif):</strong> Siswa yang berhasil memangkas waktu 0.5 detik mendapat apresiasi tinggi atas usahanya.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Dukungan Bukti Visual Rekaman:</strong> Ceklis teknik gerak dapat divalidasi silang melalui rekaman video gerak lambat kamera smartphone.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="con-column">
+                    <div class="column-header">
+                      <div class="col-badge">⚠️</div>
+                      <h4>Kekurangan & Tantangan Instrumen</h4>
+                    </div>
+                    <ul class="evaluation-items-list">
+                      <li class="eval-item">
+                        <strong>Waktu Reaksi Manual Stopwatch:</strong> Terdapat potensi *human error* waktu reaksi penekan tombol stopwatch tangan sebesar ±0.1 detik.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Pengaruh Faktor Angin Lapangan:</strong> Hembusan angin searah atau berlawanan arah lari di lapangan outdoor dapat mempengaruhi catatan waktu murni.
+                      </li>
+                      <li class="eval-item">
+                        <strong>Kelelahan Fisik Saat Tes Ulang:</strong> Siswa yang mengulang tes karena salah start mengalami kelelahan anaerobik yang mempengaruhi performa.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="mitigation-box">
+                  <div class="mitigation-icon">💡</div>
+                  <div class="mitigation-text">
+                    <h5>Rencana Solusi & Mitigasi Guru:</h5>
+                    <p>Menggunakan sistem double-timer (dua pengamat stopwatch independen di garis finish lalu diambil rata-rata), serta memberikan jeda istirahat penuh 5 menit sebelum tes pengulangan.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aspect 3 -->
+              <div class="aspect-panel" id="i4-teori">
+                <div class="theory-cards-grid">
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Psikologi Motivasi</span>
+                    <h4>📈 Ipsative Assessment & Self-Referenced Learning</h4>
+                    <p>
+                      Membandingkan performa siswa saat ini dengan performa masa lalunya sendiri (*ipsative grading*), terbukti secara psikologis menumbuhkan motivasi intrinsik dan efikasi diri berkelanjutan.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Psikometri Olahraga</span>
+                    <h4>⏱️ Criterion-Referenced Measurement (Robert Glaser)</h4>
+                    <p>
+                      Kriteria batas capaian kompetensi minimum (KKTP) dirumuskan berdasarkan standar fisiologis kebugaran anaerobik remaja Fase F usia 16-17 tahun.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Pendidikan Karakter</span>
+                    <h4>🔥 Grit Theory (Angela Duckworth)</h4>
+                    <p>
+                      Rubrik evaluasi afektif mengukur dimensi <em>Perseverance of Effort</em> dan <em>Consistency of Interest</em> siswa dalam menembus garis batas kelelahan lari.
+                    </p>
+                  </div>
+
+                  <div class="theory-card">
+                    <span class="theory-tag-pill">Pengukuran Biomekanika</span>
+                    <h4>📐 Kinematic Process Assessment</h4>
+                    <p>
+                      Mengukur variabel kinematika sudut dorongan lutut dan frekuensi langkah sebagai indikator proses biomekanika yang valid dalam pembelajaran atletik.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-col brand-col">
+          <h3>E-Portofolio<span> PPG.</span></h3>
+          <p>Ruang rekam jejak Praktik Pengalaman Lapangan (PPL). Disusun sebagai dokumentasi dan refleksi perjalanan menjadi guru profesional.</p>
+        </div>
+
+        <div class="footer-col links-col">
+          <h4>Jejak PPL 1</h4>
+          <ul>
+            <li><a href="../PPL_1/observasi.html">Hasil Observasi</a></li>
+            <li><a href="../PPL_1/modul.html">Modul Ajar</a></li>
+            <li><a href="../PPL_1/lkpd.html">LKPD</a></li>
+            <li><a href="../PPL_1/penilaian.html">Penilaian</a></li>
+            <li><a href="../PPL_1/modelguru.html">Model Guru</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col links-col">
+          <h4>Jejak PPL 2</h4>
+          <ul>
+            <li><a href="rancangan.html">Rancangan Pembelajaran</a></li>
+            <li><a href="materi.html">Materi Pembelajaran</a></li>
+            <li><a href="media.html">Media Pembelajaran</a></li>
+            <li><a href="video.html">Video Praktik Mengajar</a></li>
+            <li><a href="non_mengajar.html">Kegiatan Non-Mengajar</a></li>
+            <li><a href="instrumen.html">Instrumen Penilaian</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h4>Lokasi LPTK</h4>
+          <p>📍 Universitas Negeri Yogyakarta</p>
+
+          <div class="map-container">
+            <iframe
+              src="https://maps.google.com/maps?q=Universitas%20Negeri%20Yogyakarta&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="150"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:ilyasfandhianggara@gmail.com">Email</a>
+            <a href="https://www.instagram.com/fandhidk17/" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Muhammad Qoid Falahi - E-Portofolio PPL PPG. Semua Hak Cipta Dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // 1. Mobile Menu Toggle
+      const menu = document.querySelector("#mobile-menu");
+      const menuLinks = document.querySelector(".nav-links");
+
+      if (menu && menuLinks) {
+        menu.addEventListener("click", function () {
+          menuLinks.classList.toggle("active");
+          menu.classList.toggle("is-active");
+        });
+      }
+
+      // 2. Dropdown Toggle Mobile
+      const dropdowns = document.querySelectorAll(".dropdown");
+      dropdowns.forEach((dropdown) => {
+        const dropbtn = dropdown.querySelector(".dropbtn");
+        if (dropbtn) {
+          dropbtn.addEventListener("click", function (e) {
+            if (window.innerWidth <= 768) {
+              e.preventDefault();
+              dropdown.classList.toggle("active");
+            }
+          });
+        }
+      });
+
+      // 3. Tab Switching: UTS vs UAS
+      function switchMainTab(tabKey) {
+        const btnUts = document.getElementById("tabBtnUts");
+        const btnUas = document.getElementById("tabBtnUas");
+        const panelUts = document.getElementById("panelUts");
+        const panelUas = document.getElementById("panelUas");
+
+        if (tabKey === "uts") {
+          btnUts.classList.add("active");
+          btnUas.classList.remove("active");
+          panelUts.classList.add("active");
+          panelUas.classList.remove("active");
+          window.location.hash = "uts";
+        } else if (tabKey === "uas") {
+          btnUas.classList.add("active");
+          btnUts.classList.remove("active");
+          panelUas.classList.add("active");
+          panelUts.classList.remove("active");
+          window.location.hash = "uas";
+        }
+      }
+
+      // 4. Sub-Tab Switching inside UAS: Siklus 2, 3, 4
+      function switchUasSubTab(siklusKey) {
+        const btnSiklus2 = document.getElementById("subTabBtnSiklus2");
+        const btnSiklus3 = document.getElementById("subTabBtnSiklus3");
+        const btnSiklus4 = document.getElementById("subTabBtnSiklus4");
+
+        const panelSiklus2 = document.getElementById("panelSiklus2");
+        const panelSiklus3 = document.getElementById("panelSiklus3");
+        const panelSiklus4 = document.getElementById("panelSiklus4");
+
+        // Reset all buttons & panels
+        [btnSiklus2, btnSiklus3, btnSiklus4].forEach((b) => {
+          if (b) b.classList.remove("active");
+        });
+        [panelSiklus2, panelSiklus3, panelSiklus4].forEach((p) => {
+          if (p) {
+            p.classList.remove("active");
+            p.style.display = "none";
+          }
+        });
+
+        if (siklusKey === "siklus2") {
+          btnSiklus2.classList.add("active");
+          panelSiklus2.classList.add("active");
+          panelSiklus2.style.display = "block";
+          window.location.hash = "uas-siklus2";
+        } else if (siklusKey === "siklus3") {
+          btnSiklus3.classList.add("active");
+          panelSiklus3.classList.add("active");
+          panelSiklus3.style.display = "block";
+          window.location.hash = "uas-siklus3";
+        } else if (siklusKey === "siklus4") {
+          btnSiklus4.classList.add("active");
+          panelSiklus4.classList.add("active");
+          panelSiklus4.style.display = "block";
+          window.location.hash = "uas-siklus4";
+        }
+      }
+
+      // 5. Switch Aspect Tabs (Konteks, Evaluasi, Teori) within each cycle
+      function switchAspect(cyclePrefix, aspectKey, clickedBtn) {
+        const parentTabs = clickedBtn.parentElement;
+        const allAspectBtns = parentTabs.querySelectorAll(".aspect-tab-btn");
+        allAspectBtns.forEach((btn) => btn.classList.remove("active"));
+        clickedBtn.classList.add("active");
+
+        const parentCard = parentTabs.closest(".analysis-interactive-card");
+        const allPanels = parentCard.querySelectorAll(".aspect-panel");
+        allPanels.forEach((panel) => panel.classList.remove("active"));
+
+        const targetPanel = document.getElementById(`${cyclePrefix}-${aspectKey}`);
+        if (targetPanel) {
+          targetPanel.classList.add("active");
+        }
+      }
+
+      // 6. Handle URL Hash on Load
+      window.addEventListener("DOMContentLoaded", () => {
+        const hash = window.location.hash.toLowerCase();
+        if (hash.includes("uas")) {
+          switchMainTab("uas");
+          if (hash.includes("siklus3")) {
+            switchUasSubTab("siklus3");
+          } else if (hash.includes("siklus4")) {
+            switchUasSubTab("siklus4");
+          } else {
+            switchUasSubTab("siklus2");
+          }
+        } else {
+          switchMainTab("uts");
+        }
+      });
+
+      // 7. Scroll Reveal Animation
+      function reveal() {
+        const reveals = document.querySelectorAll(".reveal");
+        for (let i = 0; i < reveals.length; i++) {
+          const windowHeight = window.innerHeight;
+          const elementTop = reveals[i].getBoundingClientRect().top;
+          const elementVisible = 60;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+      reveal();
+    </script>
+  </body>
+</html>
